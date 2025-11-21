@@ -7,7 +7,7 @@ export const Footer = () => {
     };
 
     return (
-        <footer className="px-22 bg-secondary/30 border-t border-border/40 text-white bg-[#0f0f0f]">
+        <footer className="px-5 md:px-22 bg-secondary/30 border-t border-border/40 text-white bg-[#0f0f0f]">
             <div className="container mx-auto pt-16">
                 <div className="grid md:grid-cols-4 gap-12">
 
