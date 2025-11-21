@@ -260,7 +260,7 @@ export const Services = () => {
     }
 
     return (
-        <section className="px-22 py-6 bg-[#FFFBF2] font-sans">
+        <section className="md:px-22 py-6 bg-[#FFFBF2] font-sans">
             <div className="max-w-7xl mx-auto">
 
                 {/* Heading */}

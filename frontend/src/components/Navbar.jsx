@@ -10,7 +10,7 @@ export const Navbar = () => {
     return (
         <>
             {/* NAVBAR */}
-            <div className="h-30 px-22 text-black text-[17px]">
+            <div className="h-30 md:px-22 text-black text-[17px]">
                 <nav className="grid grid-cols-2 md:grid-cols-3 items-center h-full">
 
                     {/* Logo */}
