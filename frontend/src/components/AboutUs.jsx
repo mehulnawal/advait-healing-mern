@@ -2,8 +2,7 @@ import { NavLink } from "react-router";
 import { useEffect, useState } from "react";
 import founderImg from "../assets/founder/founder.png";
 
-
-// 👉 Scroll Animation Hook
+// Scroll Animation Hook
 const useRevealOnScroll = () => {
     const [visible, setVisible] = useState(false);
     const [ref, setRef] = useState(null);
@@ -14,10 +13,8 @@ const useRevealOnScroll = () => {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
-                    // When entering → play animation
                     setVisible(true);
                 } else {
-                    // When leaving → reset so animation can replay next time
                     setVisible(false);
                 }
             },
@@ -32,7 +29,6 @@ const useRevealOnScroll = () => {
 };
 
 export const About = () => {
-
     const [setLeftRef, leftVisible] = useRevealOnScroll();
     const [setRightRef, rightVisible] = useRevealOnScroll();
 
@@ -40,9 +36,31 @@ export const About = () => {
         <section className="px-5 md:px-22 py-24 bg-[#FFFBF2] font-sans">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-                {/* === LEFT TEXT SECTION === */}
-                <div ref={setLeftRef}
-                    className={`${leftVisible ? "animate-slide-left" : "opacity-0"}`}
+                {/* RIGHT IMAGE FIRST ON MOBILE */}
+                <div
+                    ref={setRightRef}
+                    className={`
+            order-1 md:order-2 
+            flex justify-center md:justify-end 
+            overflow-hidden
+            ${rightVisible ? "animate-slide-right" : "opacity-0"}
+          `}
+                >
+                    <img
+                        src={founderImg}
+                        alt="Founder of Advait Healing"
+                        className="rounded-2xl w-full max-w-md shadow-lg object-cover"
+                    />
+                </div>
+
+                {/* LEFT TEXT (SECOND ON MOBILE) */}
+                <div
+                    ref={setLeftRef}
+                    className={`
+            order-2 md:order-1 
+            overflow-hidden
+            ${leftVisible ? "animate-slide-left" : "opacity-0"}
+          `}
                 >
                     <h2 className="text-5xl font-[Cormorant_Garamond] font-extrabold text-purple-800 mb-4">
                         About Advait Healing
@@ -55,7 +73,6 @@ export const About = () => {
                         and soul harmony.
                     </p>
 
-                    {/* 3 Spiritual Points */}
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
                         <div className="bg-white shadow-md rounded-xl p-4 text-center">
                             <p className="text-purple-800 font-semibold">Chakra<br />Balancing</p>
@@ -73,18 +90,6 @@ export const About = () => {
                             More About Us
                         </span>
                     </NavLink>
-                </div>
-
-                {/* === RIGHT IMAGE SECTION === */}
-                <div
-                    ref={setRightRef}
-                    className={`flex justify-center md:justify-end ${rightVisible ? "animate-slide-right" : "opacity-0"}`}
-                >
-                    <img
-                        src={founderImg}
-                        alt="Founder of Advait Healing"
-                        className="rounded-2xl w-full max-w-md shadow-lg object-cover"
-                    />
                 </div>
 
             </div>
