@@ -37,12 +37,11 @@ export const About = () => {
     const [setRightRef, rightVisible] = useRevealOnScroll();
 
     return (
-        <section className="px-18 md:px-22 py-24 bg-[#FFFBF2] font-sans">
+        <section className="px-5 md:px-22 py-24 bg-[#FFFBF2] font-sans">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
                 {/* === LEFT TEXT SECTION === */}
-                <div
-                    ref={setLeftRef}
+                <div ref={setLeftRef}
                     className={`${leftVisible ? "animate-slide-left" : "opacity-0"}`}
                 >
                     <h2 className="text-5xl font-[Cormorant_Garamond] font-extrabold text-purple-800 mb-4">
