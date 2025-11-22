@@ -39,13 +39,7 @@ export const About = () => {
                 {/* RIGHT IMAGE FIRST ON MOBILE */}
                 <div
                     ref={setRightRef}
-                    className={`
-            order-1 md:order-2 
-            flex justify-center md:justify-end 
-            overflow-hidden
-            ${rightVisible ? "animate-slide-right" : "opacity-0"}
-          `}
-                >
+                    className={` order-1 md:order-2 flex justify-center md:justify-end  overflow-hidden ${rightVisible ? "animate-slide-right" : "opacity-0"} `} >
                     <img
                         src={founderImg}
                         alt="Founder of Advait Healing"
@@ -56,12 +50,7 @@ export const About = () => {
                 {/* LEFT TEXT (SECOND ON MOBILE) */}
                 <div
                     ref={setLeftRef}
-                    className={`
-            order-2 md:order-1 
-            overflow-hidden
-            ${leftVisible ? "animate-slide-left" : "opacity-0"}
-          `}
-                >
+                    className={`order-2 md:order-1  overflow-hidden pb-6 ${leftVisible ? "animate-slide-left" : "opacity-0"} `} >
                     <h2 className="text-5xl font-[Cormorant_Garamond] font-extrabold text-purple-800 mb-4">
                         About Advait Healing
                     </h2>
