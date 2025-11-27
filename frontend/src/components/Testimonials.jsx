@@ -18,10 +18,33 @@ const Testimonials = () => {
         autoplay: true,
         speed: 400,
         autoplaySpeed: 2500,
+        arrows: false,
+
         slidesToShow: 2,
         slidesToScroll: 1,
-        arrows: false,
+
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
     };
+
 
     return (
         <section className="px-5 md:px-[50px] lg:px-[70px] py-16 bg-[#FFFBF2]">
@@ -34,11 +57,9 @@ const Testimonials = () => {
                     {images.map((img, i) => (
                         <div key={i} className="px-4">
                             <div className="bg-white p-4 rounded-2xl shadow-xl border border-gray-100">
-                                <img
-                                    src={img}
-                                    alt="testimonial"
-                                    className="rounded-xl w-full max-h-[550px] object-contain"
-                                />
+                                <img src={img}
+                                    className="rounded-xl w-full max-h-[650px] object-contain md:max-h-[550px]" />
+
                             </div>
                         </div>
                     ))}

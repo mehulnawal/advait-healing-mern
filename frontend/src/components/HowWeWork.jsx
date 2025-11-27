@@ -7,7 +7,7 @@ export default function HowIWork() {
         <>
             {/* <Banner /> */}
 
-            <div className="px-5 md:px-[50px] lg:px-[70px] min-h-screen  bg-[#FFFBF2] text-[#050505] pt-28">
+            <div className="px-5 md:px-[50px] lg:px-[70px] min-h-screen  bg-[#FFFBF2] text-[#050505] ">
 
                 {/* Page Container */}
                 <div className="max-w-6xl mx-auto pb-20 h-100">
@@ -18,7 +18,7 @@ export default function HowIWork() {
                             className="text-5xl md:text-6xl font-semibold mb-6"
                             style={{ fontFamily: "Cormorant Garamond, serif" }}
                         >
-                            How I Work
+                            How We Work
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto opacity-80">
