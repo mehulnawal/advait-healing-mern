@@ -3,6 +3,7 @@ import { useState } from "react";
 import logo from "../assets/logo/advait-healing-logo2.png";
 import { CalendarHeart, Menu, X } from "lucide-react";
 import { Footer } from "./footer";
+import ChatBot from "./chatbot";
 
 export const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -10,7 +11,7 @@ export const Navbar = () => {
     return (
         <>
             {/* NAVBAR */}
-            <div className="h-30 px-5 md:px-22 text-black text-[17px]">
+            <div className="h-30 px-5 md:px-[50px] lg:px-[70px]  md:px-22 text-black text-[17px]">
                 <nav className="grid grid-cols-2 md:grid-cols-3 items-center h-full">
 
                     {/* Logo */}
@@ -20,15 +21,15 @@ export const Navbar = () => {
 
                     <ul className="hidden md:flex justify-between gap-5">
                         <li>
-                            <NavLink
-                                to="/how-do-i-work"
+                            {/* <NavLink
+                                to="/how-do-we-work"
                                 className={({ isActive }) =>
                                     `relative pb-1 transition-all
      ${isActive ? "text-[#7C5190] after:w-full after:bg-[#7C5190]" : "text-black after:w-0 after:bg-transparent"}
      after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
                                 } >
-                                How Do I Work ?
-                            </NavLink>
+                                How Do We Work ?
+                            </NavLink> */}
                         </li>
 
                         <li>
@@ -45,13 +46,19 @@ export const Navbar = () => {
 
                         <li>
                             <NavLink
-                                to="/testimonials"
+                                to="/about-us"
                                 className={({ isActive }) =>
-                                    `relative pb-1 transition-all
-     ${isActive ? "text-[#7C5190] after:w-full after:bg-[#7C5190]" : "text-black after:w-0 after:bg-transparent"}
-     after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
-                                } >
-                                Testimonials
+                                    `relative pb-1 transition-all ${isActive ? "text-[#7C5190] after:w-full after:bg-[#7C5190]" : "text-black after:w-0 after:bg-transparent"} after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`} >
+                                About Us
+                            </NavLink>
+                        </li>
+
+                        <li>
+                            <NavLink
+                                to="/courses"
+                                className={({ isActive }) =>
+                                    `relative pb-1 transition-all ${isActive ? "text-[#7C5190] after:w-full after:bg-[#7C5190]" : "text-black after:w-0 after:bg-transparent"} after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`} >
+                                Courses
                             </NavLink>
                         </li>
                     </ul>
@@ -87,18 +94,15 @@ export const Navbar = () => {
                 <ul className="flex flex-col gap-6 p-6 text-[18px] text-black">
 
                     <li>
-                        <NavLink
-                            to="/how-do-i-work"
+                        {/* <NavLink
+                            to="/how-do-we-work"
                             onClick={() => setOpen(false)}
                             className={({ isActive }) =>
-                                `relative pb-1 
-            ${isActive ? "after:w-full after:bg-[#7C5190]" : "after:w-0 after:bg-transparent"} 
-            after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all 
-            hover:after:w-full hover:after:bg-[#7C5190]`
+                                `relative pb-1 ${isActive ? "after:w-full after:bg-[#7C5190]" : "after:w-0 after:bg-transparent"}  after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all  hover:after:w-full hover:after:bg-[#7C5190]`
                             }
                         >
-                            How Do I Work ?
-                        </NavLink>
+                            How Do We Work ?
+                        </NavLink> */}
                     </li>
 
                     <li>
@@ -116,21 +120,6 @@ export const Navbar = () => {
                         </NavLink>
                     </li>
 
-                    <li>
-                        <NavLink
-                            to="/testimonials"
-                            onClick={() => setOpen(false)}
-                            className={({ isActive }) =>
-                                `relative pb-1 
-            ${isActive ? "after:w-full after:bg-[#7C5190]" : "after:w-0 after:bg-transparent"} 
-            after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all 
-            hover:after:w-full hover:after:bg-[#7C5190]`
-                            }
-                        >
-                            Testimonials
-                        </NavLink>
-                    </li>
-
 
                     {/* Mobile Button */}
                     <button
@@ -145,6 +134,7 @@ export const Navbar = () => {
 
 
             <Outlet />
+            <ChatBot />
             <Footer />
         </>
     );

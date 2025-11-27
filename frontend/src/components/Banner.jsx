@@ -1,10 +1,9 @@
-import heroBg from "../assets/founder/founder.png";
+import heroBg from "../assets/founder/founder2.png";
 import bannerRightImg from "../assets/banner/banner-right-img.png";
 
 export const Banner = () => {
     return (
-        <section
-            className="relative w-full min-h-[90vh] flex items-center bg-cover bg-center px-6 md:px-22 py-12"
+        <section className="relative w-full min-h-[90vh] flex items-center bg-cover bg-center px-5 md:px-[50px] lg:px-[70px] py-12"
             style={{ backgroundImage: `url(${heroBg})` }}
         >
             {/* Overlay */}
@@ -26,16 +25,16 @@ export const Banner = () => {
                     {/* Stats */}
                     <div className="grid grid-cols-3 gap-4 mt-10">
                         <div className="bg-white shadow-md rounded-xl p-4 text-center">
-                            <h3 className="text-2xl font-bold text-purple-800">1000+</h3>
-                            <p className="text-gray-600 text-sm">Energy Scans</p>
+                            <h3 className="text-2xl font-bold text-purple-800">6540+</h3>
+                            <p className="text-gray-600 text-sm">Hours Spent</p>
                         </div>
                         <div className="bg-white shadow-md rounded-xl p-4 text-center">
-                            <h3 className="text-2xl font-bold text-purple-800">90%</h3>
+                            <h3 className="text-2xl font-bold text-purple-800">300+</h3>
                             <p className="text-gray-600 text-sm">Feel Lighter</p>
                         </div>
                         <div className="bg-white shadow-md rounded-xl p-4 text-center">
-                            <h3 className="text-2xl font-bold text-purple-800">15+</h3>
-                            <p className="text-gray-600 text-sm">Modalities</p>
+                            <h3 className="text-2xl font-bold text-purple-800">400+</h3>
+                            <p className="text-gray-600 text-sm">Sessions Done</p>
                         </div>
                     </div>
                 </div>

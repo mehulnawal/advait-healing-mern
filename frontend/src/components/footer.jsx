@@ -7,7 +7,7 @@ export const Footer = () => {
     };
 
     return (
-        <footer className="px-5 md:px-22 bg-secondary/30 border-t border-border/40 text-white bg-[#0f0f0f]">
+        <footer className="px-5 md:px-[50px] lg:px-[70px] bg-secondary/30 border-t border-border/40 text-white bg-[#0f0f0f]">
             <div className="container mx-auto pt-16">
                 <div className="grid md:grid-cols-4 gap-12">
 
@@ -26,12 +26,12 @@ export const Footer = () => {
                     <div className="space-y-5">
                         <h4 className="font-light text-foreground tracking-wide">Quick Links</h4>
                         <div className="space-y-3">
-                            <button
+                            {/* <button
                                 onClick={() => scrollToSection("how-i-work")}
                                 className="block text-sm text-muted-foreground hover:text-primary transition-colors font-light"
                             >
                                 How I Work
-                            </button>
+                            </button> */}
                             <button
                                 onClick={() => scrollToSection("services")}
                                 className="block text-sm text-muted-foreground hover:text-primary transition-colors font-light"
