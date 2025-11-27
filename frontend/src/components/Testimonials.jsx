@@ -53,17 +53,39 @@ const Testimonials = () => {
             </h2>
 
             <div className="max-w-3xl mx-auto">
-                <Slider {...settings}>
+                <Slider
+                    dots={true}
+                    infinite={true}
+                    autoplay={true}
+                    speed={400}
+                    autoplaySpeed={2500}
+                    slidesToShow={1}
+                    slidesToScroll={1}
+                    arrows={false}
+                >
                     {images.map((img, i) => (
-                        <div key={i} className="px-4">
-                            <div className="bg-white p-4 rounded-2xl shadow-xl border border-gray-100">
-                                <img src={img}
-                                    className="rounded-xl w-full max-h-[650px] object-contain md:max-h-[550px]" />
+                        <div key={i} className="px-3">
+
+                            <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-2">
+
+                                {/* FIXED WRAPPER */}
+                                <div className="w-full max-w-[500px] mx-auto">
+
+                                    {/* IMPORTANT FIX HERE */}
+                                    <img
+                                        src={img}
+                                        alt="testimonial"
+                                        className="w-full h-auto object-fill"
+                                    />
+
+                                </div>
 
                             </div>
                         </div>
                     ))}
                 </Slider>
+
+
             </div>
         </section>
     );
