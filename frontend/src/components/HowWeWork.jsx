@@ -29,13 +29,13 @@ export default function HowIWork() {
                     </section>
 
                     {/* ---------- IMAGE SECTION ---------- */}
-                    <section className="flex justify-center mb-20 h-100">
-                        <img
-                            src={founderImg}
-                            alt="Energy Healing Session"
-                            className="rounded-3xl shadow-xl w-full max-w-3xl h-full"
-                        />
-                    </section>
+                    {/* ---------- IMAGE SECTION ---------- */}
+                    <section
+                        className="flex justify-center mb-20 rounded-3xl shadow-xl overflow-hidden w-full max-w-4xl mx-auto md:h-[480px] h-[300px] bg-cover bg-center"
+                        style={{
+                            backgroundImage: `url(${founderImg})`,
+                        }} > </section>
+
 
                     {/* ---------- HOW I WORK STEPS ---------- */}
                     <section className="grid md:grid-cols-3 gap-10">

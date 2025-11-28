@@ -69,13 +69,13 @@ const Testimonials = () => {
                             <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-2">
 
                                 {/* FIXED WRAPPER */}
-                                <div className="w-full max-w-[500px] mx-auto">
+                                <div className="w-full max-w-[500px]  mx-auto">
 
                                     {/* IMPORTANT FIX HERE */}
                                     <img
                                         src={img}
                                         alt="testimonial"
-                                        className="w-full h-auto object-fill"
+                                        className="w-full object-fill"
                                     />
 
                                 </div>
@@ -84,8 +84,6 @@ const Testimonials = () => {
                         </div>
                     ))}
                 </Slider>
-
-
             </div>
         </section>
     );
