@@ -25,9 +25,32 @@ import {
     Coins,
     BookOpenCheck
 } from "lucide-react";
-import chakraBalanceImg from "../assets/services/chakra-balancing.png";
-import karmicImprintImg from "../assets/services/karmic-imprint.png";
-import healingImg from "../assets/services/healing.png";
+
+import advancedSoulProgramming from "../assets/services/advanced-soul-programing.jpg";
+import akashicHealing from "../assets/services/akashic-healing.jpeg";
+import angelicHealing from "../assets/services/angleicl-healing.jpeg";
+import animalCommunication from "../assets/services/animal-communication.jpeg";
+import auroScan from "../assets/services/auro-scan.jpg";
+import blackMagicRemoval from "../assets/services/black-magic-removal.jpeg";
+import chakraHealing from "../assets/services/chakra-healing.jpeg";
+import clairvoyanceProgramming from "../assets/services/clairvoyance-programming.jpg";
+import entityRemoval from "../assets/services/entity-removal.jpeg";
+import goldenDnaActivation from "../assets/services/golden-dna-activation.jpg";
+import dnaActivation from "../assets/services/dna-activation.jpg";
+import indigoActivation from "../assets/services/indigo-activation.jpg";
+import jSealsImplantRemoval from "../assets/services/jseals-implant-entity-removal.jpg";
+import karmicImprintRemoval from "../assets/services/karmic-imprint-removal.jpg";
+import lamaFera from "../assets/services/lama-fera.jpeg";
+import mokshapattamHealing from "../assets/services/mokshapattam-healing.jpeg";
+import pastLifeRegression from "../assets/services/past-life-regression.jpeg";
+import reikiHealing from "../assets/services/reiki-healing.jpeg";
+import relationshipHealing from "../assets/services/relationship-healing.jpeg";
+import soulMatrixIntegration from "../assets/services/soul-matrix-inigration.jpg";
+import spaceClearing from "../assets/services/space-clearing.jpeg";
+import tarotCardReading from "../assets/services/total-card-reading.jpeg";
+import wealthAbundance from "../assets/services/walth-abundance.jpeg";
+
+
 import { NavLink } from "react-router";
 
 // ------------------- CARD -------------------
@@ -36,37 +59,42 @@ const ServiceCard = ({ image, title, desc, Icon, onKnowMore }) => {
         <div className="w-full flex flex-col items-center">
 
             {/* Icon */}
-            <div className="flex justify-center -mb-10 z-10 relative">
-                <div className="w-20 h-20 rounded-full bg-[#FFFBF2] border-b-4 border-gray-200 shadow-md flex items-center justify-center">
-                    <Icon className="w-10 h-10 text-purple-700 stroke-[1.5px]" />
+            <div className="flex justify-center -mb-8 z-10 relative">
+                <div className="w-16 h-16 rounded-full bg-[#FFFBF2] border border-gray-300 shadow flex items-center justify-center">
+                    <Icon className="w-7 h-7 text-purple-700 stroke-[1.6px]" />
                 </div>
             </div>
 
             {/* Card */}
-            <div className="relative bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 w-full cursor-pointer">
+            <div className="relative bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 w-full cursor-pointer pt-10 pb-4">
 
-                <img
-                    src={image}
-                    alt={title}
-                    className="w-full h-60 object-cover"
-                />
+                {/* Circular Image */}
+                <div className="flex justify-center">
+                    <div className="w-48 h-48 rounded-full overflow-hidden shadow-md bg-gray-100">
+                        <img
+                            src={image}
+                            alt={title}
+                            className="w-full h-full object-cover"
+                        />
+                    </div>
+                </div>
 
                 {/* Hover Info */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center px-6
                     bg-purple-900/80 text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
-                    <p className="text-gray-200 text-sm leading-relaxed italic">{desc}</p>
+                    <p className="text-gray-200 text-sm leading-relaxed italic text-center">{desc}</p>
                 </div>
             </div>
 
             {/* Title */}
-            <h3 className="text-center mt-7 text-xl font-semibold text-purple-800">
+            <h3 className="text-center mt-5 text-xl font-semibold text-purple-800">
                 {title}
             </h3>
 
             {/* Button */}
             <button
                 onClick={onKnowMore}
-                className="flex items-center gap-2 bg-[#7C5190] text-white mt-6 py-2.5 px-4 rounded-2xl font-medium hover:bg-[#a759c9f5] transition text-[14px]"
+                className="flex items-center gap-2 bg-[#7C5190] text-white mt-4 py-2 px-4 rounded-2xl font-medium hover:bg-[#a759c9f5] transition text-[14px]"
             >
                 <Info size={16} />
                 <span>Know More</span>
@@ -74,6 +102,7 @@ const ServiceCard = ({ image, title, desc, Icon, onKnowMore }) => {
         </div>
     );
 };
+
 
 
 // ------------------- MODAL -------------------
@@ -208,7 +237,7 @@ export const Services = () => {
             title: "Aura Clearing & Chakra Balancing",
             desc: "Energy field analysis revealing hidden imbalances and soul patterns.",
             Icon: Flower,
-            image: chakraBalanceImg,
+            image: auroScan,
             process: "Comprehensive scanning of your 7-layer auric field.",
             benefits: ["Reveal chakra issues", "Remove energetic blocks", "Restore balance"],
             duration: "30 - 45 minutes",
@@ -218,8 +247,8 @@ export const Services = () => {
             title: "Karmic Imprint Removal",
             desc: "Clear past life karma and ancestral patterns blocking your progress.",
             Icon: Stars,
-            image: karmicImprintImg,
-            process: "Deep karmic clearing across timelines to remove soul contracts, vows, and inherited patterns.",
+            image: karmicImprintRemoval,
+            process: "Deep karmic clearing across timelines...",
             benefits: ["Release karmic debt", "Clear ancestral patterns", "Break patterns", "Free past-life trauma"],
             duration: "60 - 90 minutes",
             price: "₹5,555/-",
@@ -228,20 +257,20 @@ export const Services = () => {
             title: "J-Seals Implant & Entity Removal",
             desc: "Remove energetic implants and seals limiting spiritual growth.",
             Icon: Shield,
-            image: healingImg,
-            process: "Identification and removal of artificial seals and implants that block natural abilities.",
+            image: jSealsImplantRemoval,
+            process: "Identification and removal of artificial seals...",
             benefits: ["Restore inner peace", "Clear attachments", "Restore natural abilities", "Enhance spiritual gifts"],
             duration: "45 - 60 minutes",
             price: "₹5,555/-",
         },
 
-        // 🔮 ADVANCED SERVICES
+        // ⚡ ADVANCED SERVICES
         {
             title: "Advanced Soul Clearing",
             desc: "Deep energetic cleansing to free your soul from lower vibrations.",
             Icon: Zap,
-            image: chakraBalanceImg,
-            process: "Comprehensive soul cleansing removing negative entities, attachments, and low-vibrational energies",
+            image: soulMatrixIntegration,
+            process: "Comprehensive soul cleansing...",
             benefits: ["Clear negative entities", "Remove attachments", "Raise vibration", "Restore soul purity"],
             duration: "75 - 90 minutes",
             price: "₹5,555/-",
@@ -250,18 +279,18 @@ export const Services = () => {
             title: "DNA Activation I, II, III",
             desc: "Activate dormant DNA strands to unlock your highest potential.",
             Icon: Repeat,
-            image: chakraBalanceImg,
-            process: "Sequential activation of 12-strand DNA to unlock dormant abilities and enhance consciousness",
-            benefits: ["Activate psychic abilities", "Enhance intuition", "Improve health", 'Expand consciousness '],
+            image: dnaActivation,
+            process: "Sequential activation...",
+            benefits: ["Activate psychic abilities", "Enhance intuition", "Improve health", "Expand consciousness"],
             duration: "60 minutes Per Level",
             price: "₹5,555/-",
         },
         {
             title: "Golden DNA Activation I, II, III",
-            desc: "Higher frequency DNA upgrades for quantum consciousness expansion.",
+            desc: "Higher frequency DNA upgrades...",
             Icon: Stars,
-            image: karmicImprintImg,
-            process: "Advanced golden frequency DNA activation for higher dimensional consciousness",
+            image: goldenDnaActivation,
+            process: "Advanced golden frequency activation...",
             benefits: ["Access higher dimensions", "Quantum consciousness", "Enhanced manifestation", "Cosmic connection"],
             duration: "90 Minutes Per Level",
             price: "₹5,555/-",
@@ -270,176 +299,169 @@ export const Services = () => {
             title: "Soul Matrix Integration",
             desc: "Reprogram your soul blueprint for alignment with purpose.",
             Icon: Compass,
-            image: chakraBalanceImg,
-            process: "Reprogramming of soul matrix to align with highest purpose and divine blueprint",
+            image: chakraHealing,
+            process: "Reprogramming soul matrix...",
             benefits: ["Align with purpose", "Clear limiting beliefs", "Enhance soul gifts", "Activate life mission"],
             duration: "90 - 120 minutes",
             price: "₹5,555/-",
         },
         {
             title: "Clairvoyance Programming",
-            desc: "Unlock and enhance your natural psychic and intuitive abilities.",
+            desc: "Unlock and enhance your natural psychic abilities.",
             Icon: Eye,
-            image: chakraBalanceImg,
-            process: "Activation and enhancement of clairvoyant abilities through energy programming",
+            image: clairvoyanceProgramming,
+            process: "Activation of clairvoyance...",
             benefits: ["Enhance psychic sight", "Develop intuition", "See energy fields", "Access higher guidance"],
             duration: "60 - 75 minutes",
             price: "₹5,555/-",
         },
         {
             title: "Indigo Activation",
-            desc: "Special activation for lightworkers and spiritually awakened souls.",
+            desc: "Special activation for lightworkers.",
             Icon: Sparkles,
-            image: karmicImprintImg,
-            process: "Specialized activation for indigo souls to fully embody their lightworker mission",
-            benefits: ["Activate lightworker gifts", "Enhance healing abilities", "Strengthen mission clarity", "Connect with star family"],
+            image: indigoActivation,
+            process: "Indigo alignment process...",
+            benefits: ["Activate lightworker gifts", "Enhance healing abilities", "Mission clarity", "Star family connection"],
             duration: "90 - 120 minutes",
             price: "₹5,555/-",
         },
 
-        // 🕊️ SPECIALIZED SERVICES — Healer: Deepa
+        // 🌟 SPECIALIZED SERVICES
         { type: "heading", label: "Specialized Services" },
+
         {
             title: "Tarot Card Healing",
-            desc: "Guidance through tarot with healing energy infusion.",
+            desc: "Guidance through tarot with healing frequency.",
             Icon: CalendarHeart,
-            image: healingImg,
-            process: "Intuitive tarot reading combined with healing energy transmission",
-            benefits: ["Gain clarity", "Receive guidance", "Heal emotional wounds", "Make empowered decisions"],
+            image: tarotCardReading,
+            process: "Intuitive tarot healing...",
+            benefits: ["Gain clarity", "Emotional healing", "Guidance", "Better decisions"],
             duration: "45 - 60 minutes",
             price: "₹5,555/-",
         },
         {
             title: "Angelic Healing",
-            desc: "Channel angelic frequencies for deep spiritual healing and protection.",
+            desc: "Channel angelic frequencies for deep healing.",
             Icon: HeartHandshake,
-            image: chakraBalanceImg,
-            process: "Channeling angelic energies for healing, protection, and spiritual guidance",
-            benefits: ["Angelic protection", "Spiritual healing", "Higher guidance", "Peace and comfort"],
+            image: angelicHealing,
+            process: "Channelling angelic energies...",
+            benefits: ["Angelic protection", "Spiritual guidance", "Peace", "Healing"],
             duration: "60 - 75 minutes",
             price: "₹5,555/-",
         },
         {
             title: "Mokshapattam Analysis",
-            desc: "Ancient energy mapping technique for soul pattern analysis.",
+            desc: "Ancient soul path mapping.",
             Icon: Grid3x3,
-            image: karmicImprintImg,
-            process: "Traditional energy mapping to understand soul patterns and life path",
-            benefits: ["Understand soul patterns", "Map life path", "Identify challenges", "Reveal opportunities"],
+            image: mokshapattamHealing,
+            process: "Energy mapping...",
+            benefits: ["Soul pattern clarity", "Challenges", "Opportunities"],
             duration: "60 - 90 minutes",
             price: "₹5,555/-",
         },
         {
-            title: "Past Life Regression & Hypno Heal",
-            desc: "Journey into past lives for healing and soul memory integration.",
+            title: "Past Life Regression",
+            desc: "Journey into past lives for deep healing.",
             Icon: History,
-            image: healingImg,
-            process: "Guided regression to access past life memories for healing and understanding",
-            benefits: ["Heal past life trauma", "Understand soul lessons", "Release phobias", "Integrate wisdom"],
+            image: pastLifeRegression,
+            process: "Guided regression...",
+            benefits: ["Heal past trauma", "Soul lessons", "Release fears", "Wisdom"],
             duration: "90 - 120 minutes",
             price: "₹5,555/-",
         },
         {
             title: "Reiki Healing",
-            desc: "Universal life force energy healing for physical and emotional balance.",
+            desc: "Universal life force healing.",
             Icon: Flower2,
-            image: chakraBalanceImg,
-            process: "Traditional Reiki energy healing for physical, emotional, and spiritual wellness",
-            benefits: ["Physical healing", "Emotional balance", "Stress relief", "Energy restoration"],
+            image: reikiHealing,
+            process: "Traditional Reiki...",
+            benefits: ["Emotional balance", "Energy restoration", "Stress relief"],
             duration: "45 - 60 minutes",
             price: "₹5,555/-",
         },
         {
-            title: "Lama Ferra",
-            desc: "Tibetan healing technique for spiritual purification and energy alignment.",
+            title: "Lama Fera",
+            desc: "Powerful Tibetan healing.",
             Icon: Mountain,
-            image: karmicImprintImg,
-            process: "Ancient Tibetan healing method for deep spiritual purification",
-            benefits: ["Spiritual purification", "Energy alignment", "Karmic clearing", "Inner peace"],
+            image: lamaFera,
+            process: "Tibetan cleansing...",
+            benefits: ["Purification", "Alignment", "Karmic clearing"],
             duration: "60 - 75 minutes",
             price: "₹5,555/-",
         },
         {
             title: "Animal Communication & Healing",
-            desc: "Connect with and heal your beloved animal companions telepathically.",
+            desc: "Telepathic connection with animals.",
             Icon: PawPrint,
-            image: healingImg,
-            process: "Telepathic communication with animals for understanding and healing",
-            benefits: ["Understand pet behavior ", "Heal animal trauma", "Strengthen bond ", "Receive messages"],
+            image: animalCommunication,
+            process: "Telepathic communication...",
+            benefits: ["Understand pets", "Heal trauma", "Bond deeper"],
             duration: "45 - 60 minutes",
             price: "₹5,555/-",
         },
         {
             title: "Black Magic Removal",
-            desc: "Protection and cleansing from negative magical influences.",
+            desc: "Cleansing from negative influences.",
             Icon: ShieldAlert,
-            image: chakraBalanceImg,
-            process: "Identification and removal of black magic, curses, and negative spells",
-            benefits: ["Remove curses", "Clear black magic", "Restore protection", "Heal spiritual attacks"],
+            image: blackMagicRemoval,
+            process: "Removing curses...",
+            benefits: ["Protection", "Energy clearing", "Healing"],
             duration: "90 - 120 minutes",
             price: "₹5,555/-",
         },
         {
             title: "Space Clearing",
-            desc: "Cleanse and bless your home or workspace with energy.",
+            desc: "Cleanse your home/office energy.",
             Icon: Home,
-            image: karmicImprintImg,
-            process: "Remote or in-person clearing of negative energies from spaces",
-            benefits: ["Clear negative energy", "Bless space", "Improve atmosphere", "Enhance harmony"],
+            image: spaceClearing,
+            process: "Energy cleansing...",
+            benefits: ["Positive space", "Harmony", "Remove negativity"],
             duration: "60 - 90 minutes",
             price: "₹5,555/-",
         },
         {
             title: "Entity Removal",
-            desc: "Remove attached entities and negative spiritual influences.",
+            desc: "Remove negative energies and entities.",
             Icon: Ghost,
-            image: healingImg,
-            process: "Safe removal of attached entities and negative spiritual influences",
-            benefits: ["Remove entities", "Clear attachments", "Restore energy", "Enhance protection"],
+            image: entityRemoval,
+            process: "Safe removal of entities...",
+            benefits: ["Energy clarity", "Protection", "Healing"],
             duration: "75 - 90 minutes",
             price: "₹5,555/-",
         },
         {
-            title: "Chakra Healing",
-            desc: "Align and balance your seven energy centers for optimal flow.",
-            Icon: Circle,
-            image: chakraBalanceImg,
-            process: "Comprehensive balancing and alignment of all seven chakras",
-            benefits: ["Balance energy centers", "Improve energy flow", "Enhance vitality", "Restore harmony"],
-            duration: "60 - 75 minutes",
-            price: "₹5,555/-",
-        },
-        {
             title: "Relationship Healing",
-            desc: "Heal heart wounds and attract your soulmate connection.",
+            desc: "Heal heart wounds.",
             Icon: Heart,
-            image: karmicImprintImg,
-            process: "Healing of relationship patterns and heart chakra for love attraction",
-            benefits: ["Heal relationship trauma", "Attract soulmate", "Improve self-love", "Clear love blocks"],
+            image: relationshipHealing,
+            process: "Heart chakra clearing...",
+            benefits: ["Heal trauma", "Soulmate alignment", "Self-love"],
             duration: "75 - 90 minutes",
             price: "₹5,555/-",
         },
         {
             title: "Wealth Abundance Healing",
-            desc: "Remove money blocks and align with prosperity consciousness.",
+            desc: "Remove money blocks.",
             Icon: Coins,
-            image: healingImg,
-            process: "Clearing of abundance blocks and activation of prosperity consciousness",
-            benefits: ["Remove money blocks", "Attract abundance", "Shift money mindset", "Enhance prosperity"],
+            image: wealthAbundance,
+            process: "Prosperity activation...",
+            benefits: ["Money flow", "Abundance mindset"],
             duration: "60 - 75 minutes",
             price: "₹5,555/-",
         },
         {
-            title: "Akashik Records",
-            desc: "Access your soul's eternal records for profound life insights.",
+            title: "Akashic Records",
+            desc: "Access your soul’s eternal records.",
             Icon: BookOpenCheck,
-            image: chakraBalanceImg,
-            process: "Accessing the Akashik Records to retrieve soul information and guidance",
-            benefits: ["Access soul records", "Understand life purpose", "Receive guidance", "Heal soul wounds"],
+            image: akashicHealing,
+            process: "Reading soul records...",
+            benefits: ["Life purpose", "Guidance", "Healing"],
             duration: "75 - 90 minutes",
             price: "₹5,555/-",
         },
+
     ];
+
 
 
     return (

@@ -1,6 +1,6 @@
 import { NavLink } from "react-router";
 import { useEffect, useState } from "react";
-import founderImg from "../assets/founder/founder.png";
+import founderImg from "../assets/founder/founder3.jpg";
 
 // Scroll Animation Hook
 const useRevealOnScroll = () => {
@@ -64,7 +64,7 @@ export const About = () => {
 
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
                         <div className="bg-white shadow-md rounded-xl p-4 text-center">
-                            <p className="text-purple-800 font-semibold">Chakra<br />Balancing</p>
+                            <p className="text-purple-800 font-semibold">Soul<br />Integration</p>
                         </div>
                         <div className="bg-white shadow-md rounded-xl p-4 text-center">
                             <p className="text-purple-800 font-semibold">Karmic<br />Imprint Release</p>

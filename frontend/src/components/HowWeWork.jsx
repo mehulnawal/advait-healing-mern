@@ -1,5 +1,5 @@
 import { ArrowRight, ScanLine, HandHeart, Sparkles } from "lucide-react";
-import founderImg from "../assets/founder/founder.png";
+import founderImg from "../assets/founder/founder3.jpg";
 import { Banner } from "./Banner";
 
 export default function HowIWork() {
@@ -30,11 +30,11 @@ export default function HowIWork() {
 
                     {/* ---------- IMAGE SECTION ---------- */}
                     {/* ---------- IMAGE SECTION ---------- */}
-                    <section
+                    {/* <section
                         className="flex justify-center mb-20 rounded-3xl shadow-xl overflow-hidden w-full max-w-4xl mx-auto md:h-[480px] h-[300px] bg-cover bg-center"
                         style={{
                             backgroundImage: `url(${founderImg})`,
-                        }} > </section>
+                        }} > </section> */}
 
 
                     {/* ---------- HOW I WORK STEPS ---------- */}
