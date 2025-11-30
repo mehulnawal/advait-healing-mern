@@ -198,7 +198,7 @@ const ServiceModal = ({ open, onClose, service }) => {
                             </div>
 
                             {/* CTA */}
-                            <NavLink>
+                            <NavLink to='bookMySession'>
                                 <button
                                     className="bg-[#7C5190] text-white px-6 py-3 rounded-full font-medium hover:bg-[#a759c9f5] transition"
                                     onClick={onClose}

@@ -145,13 +145,15 @@ export const Navbar = () => {
                         </li>
                     </li>
 
-                    <button
-                        className="flex items-center gap-2 bg-[#7C5190] text-white w-fit py-2 px-3 rounded-2xl"
-                        onClick={() => setOpen(false)}
-                    >
-                        <CalendarHeart size={18} />
-                        <span>Book Your Session</span>
-                    </button>
+                    <NavLink to='bookMySession'>
+                        <button
+                            className="flex items-center gap-2 bg-[#7C5190] text-white w-fit py-2 px-3 rounded-2xl"
+                            onClick={() => setOpen(false)}
+                        >
+                            <CalendarHeart size={18} />
+                            <span>Book Your Session</span>
+                        </button>
+                    </NavLink>
                 </ul>
             </div>
 

@@ -8,16 +8,31 @@ export const BannerVideo = () => {
 
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-purple-100 bg-black">
 
-                    {/* Video wrapper with fixed ratio */}
-                    <div className="w-full aspect-[16/9] bg-black">
+                    {/* Video wrapper */}
+                    <div
+                        className="
+                            w-full 
+                            h-[260px]            /* Mobile */
+                            sm:h-[330px]         /* Small phones */
+                            md:h-auto            /* Allow aspect to take over */
+                            md:aspect-[16/9]     /* Desktop proper look */
+                            lg:aspect-[21/9]     /* Extra wide screens */
+                            bg-black"
+                    >
                         <video
                             src={bannerVideo}
                             autoPlay
+                            // muted               // REQUIRED for autoplay
                             loop
-                            controls
-                            // muted
                             playsInline
-                            className="w-full h-full object-contain rounded-3xl"
+                            controls
+                            className="
+                                w-full 
+                                h-full 
+                                object-cover         /* Mobile full */
+                                md:object-contain    /* Desktop letterbox */
+                                rounded-3xl
+                            "
                         />
                     </div>
 
