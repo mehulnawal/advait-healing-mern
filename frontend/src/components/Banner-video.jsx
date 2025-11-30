@@ -15,7 +15,7 @@ export const BannerVideo = () => {
                             autoPlay
                             loop
                             controls
-                            muted
+                            // muted
                             playsInline
                             className="w-full h-full object-contain rounded-3xl"
                         />

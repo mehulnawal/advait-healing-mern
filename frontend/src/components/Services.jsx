@@ -498,7 +498,7 @@ export const Services = () => {
                                 key={idx}
                                 image={item.image}
                                 title={item.title}
-                                short={item.desc}
+                                desc={item.desc}
                                 Icon={item.Icon}
                                 onKnowMore={() => {
                                     setSelectedService(item);

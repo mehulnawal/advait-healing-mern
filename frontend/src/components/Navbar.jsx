@@ -44,7 +44,7 @@ export const Navbar = () => {
 
                         <li>
                             <NavLink
-                                to="/about-us"
+                                to="/aboutOurInstructors"
                                 className={({ isActive }) =>
                                     `relative pb-1 transition-all 
                                     ${isActive ? "text-[#7C5190] after:w-full after:bg-[#7C5190]" :
@@ -70,10 +70,12 @@ export const Navbar = () => {
                     </ul>
 
                     {/* Desktop Button */}
-                    <button className="hidden md:flex justify-end items-center gap-2 bg-[#7C5190] w-fit text-white ms-auto py-2 px-2 rounded-2xl text-[14px] hover:bg-[#a759c9f5]">
-                        <CalendarHeart size={"18px"} />
-                        <span>Book Your Session</span>
-                    </button>
+                    <NavLink to='bookMySession'>
+                        <button className="hidden md:flex justify-end items-center gap-2 bg-[#7C5190] w-fit text-white ms-auto py-2 px-2 rounded-2xl text-[14px] hover:bg-[#a759c9f5]">
+                            <CalendarHeart size={"18px"} />
+                            <span>Book Your Session</span>
+                        </button>
+                    </NavLink>
 
                     {/* Mobile Menu Button */}
                     <button

@@ -64,7 +64,7 @@ export const About = () => {
 
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
                         <div className="bg-white shadow-md rounded-xl p-4 text-center">
-                            <p className="text-purple-800 font-semibold">Soul<br />Integration</p>
+                            <p className="text-purple-800 font-semibold">Aura Karmic<br />Release</p>
                         </div>
                         <div className="bg-white shadow-md rounded-xl p-4 text-center">
                             <p className="text-purple-800 font-semibold">Karmic<br />Imprint Release</p>
@@ -74,7 +74,7 @@ export const About = () => {
                         </div>
                     </div>
 
-                    <NavLink>
+                    <NavLink to='/aboutOurInstructors'>
                         <span className="bg-[#7C5190] text-white py-2.5 px-6 rounded-full font-medium text-[15px] hover:bg-[#a759c9f5] transition">
                             More About Us
                         </span>
