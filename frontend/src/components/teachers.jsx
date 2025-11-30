@@ -1,6 +1,6 @@
 import deepa from "../assets/founder/founder3.jpg";
 import mona from "../assets/teachers/teacher-mona.jpeg";
-import sunny from "../assets/founder/founder3.jpg";
+import sunny from "../assets/teachers/teacher-sunny.jpeg";
 
 const instructors = [
     {
@@ -18,7 +18,7 @@ const instructors = [
         tags: ["Past Life Regression", "Akashic Records", "Soul Alignment"]
     },
     {
-        name: "Sunny Maan",
+        name: "Sunny Mann",
         title: "Animal Communicator & Energy Coach",
         image: sunny,
         bio: "Sunny Mann is an intuitive animal and human energy healer with 25+ years of experience. Known as “The Animal Whisperer,” he helps people understand their pets, resolve behavioural issues, and trains students globally in animal communication and spiritual healing.",

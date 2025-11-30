@@ -19,7 +19,7 @@ export const Navbar = () => {
         <>
             {/* NAVBAR */}
             <div className="h-30 px-5 md:px-[50px] lg:px-[70px] text-black text-[17px]">
-                <nav className="grid grid-cols-2 md:grid-cols-3 items-center h-full">
+                <nav className="flex items-center justify-between md:grid md:grid-cols-3 h-full">
 
                     {/* Logo */}
                     <NavLink to='/' className="w-fit h-fit mb-10">
@@ -115,6 +115,34 @@ export const Navbar = () => {
                         >
                             Services
                         </NavLink>
+
+                        <li>
+                            <NavLink
+                                to="/aboutOurInstructors"
+                                className={({ isActive }) =>
+                                    `relative pb-1 
+                                ${isActive ? "after:w-full after:bg-[#7C5190]" :
+                                        "after:w-0 after:bg-transparent"}
+                                after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
+                                }
+                            >
+                                About Us
+                            </NavLink>
+                        </li>
+
+                        <li>
+                            <NavLink
+                                to="/courses"
+                                className={({ isActive }) =>
+                                    `relative pb-1 
+                                ${isActive ? "after:w-full after:bg-[#7C5190]" :
+                                        "after:w-0 after:bg-transparent"}
+                                after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
+                                }
+                            >
+                                Courses
+                            </NavLink>
+                        </li>
                     </li>
 
                     <button

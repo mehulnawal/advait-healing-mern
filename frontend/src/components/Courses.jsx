@@ -36,7 +36,7 @@ const instructorCourses = [
         ]
     },
     {
-        instructor: "Sunny Maan",
+        instructor: "Sunny Mann",
         title: "Animal Communicator & Spiritual Coach",
         courses: [
             {
