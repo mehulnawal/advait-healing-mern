@@ -111,6 +111,9 @@ const ServiceModal = ({ open, onClose, service }) => {
 
     const { title, desc, image, process, benefits, duration, price } = service;
 
+
+
+
     return (
         <div
             className="fixed inset-0 z-50 flex items-center justify-center"
@@ -198,7 +201,7 @@ const ServiceModal = ({ open, onClose, service }) => {
                             </div>
 
                             {/* CTA */}
-                            <NavLink to='bookMySession'>
+                            <NavLink to='/bookMySession'>
                                 <button
                                     className="bg-[#7C5190] text-white px-6 py-3 rounded-full font-medium hover:bg-[#a759c9f5] transition"
                                     onClick={onClose}
@@ -228,6 +231,13 @@ export const Services = () => {
         document.body.style.overflow = modalOpen ? "hidden" : "auto";
         return () => (document.body.style.overflow = "auto");
     }, [modalOpen]);
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    }, []);
 
     const serviceData = [
 

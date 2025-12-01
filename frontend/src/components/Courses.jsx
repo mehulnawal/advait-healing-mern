@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 const instructorCourses = [
     {
         instructor: "Deepa Sharma",
@@ -56,6 +58,15 @@ const instructorCourses = [
 ];
 
 export function Courses() {
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    }, []);
+
+
     return (
         <section className="bg-[#FFFBF2] px-6 md:px-[50px] py-12">
             <div className="max-w-7xl mx-auto">

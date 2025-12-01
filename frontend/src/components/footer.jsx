@@ -1,15 +1,23 @@
 import { Facebook, Instagram, Youtube, Mail } from "lucide-react";
 import logoWhiteText from '../assets/logo/advait-healing-logo-white-text.png'
 import { NavLink } from "react-router";
+import { useEffect } from "react";
 
 export const Footer = () => {
     const scrollToSection = () => {
     };
 
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    }, []);
+
     return (
         <footer className="px-5 md:px-[50px] lg:px-[70px] bg-secondary/30 border-t border-border/40 text-white bg-[#0f0f0f]">
             <div className="container mx-auto pt-16">
-                <div className="grid md:grid-cols-4 gap-12">
+                <div className="grid md:grid-cols-3 gap-12">
 
                     {/* Logo & Tagline */}
                     <div className="space-y-5">
@@ -26,28 +34,32 @@ export const Footer = () => {
                     <div className="space-y-5">
                         <h4 className="font-light text-foreground tracking-wide">Quick Links</h4>
                         <div className="space-y-3">
-                            {/* <button
-                                onClick={() => scrollToSection("how-i-work")}
-                                className="block text-sm text-muted-foreground hover:text-primary transition-colors font-light"
-                            >
-                                How I Work
-                            </button> */}
-                            <button
-                                onClick={() => scrollToSection("services")}
-                                className="block text-sm text-muted-foreground hover:text-primary transition-colors font-light"
-                            >
+
+                            <NavLink
+                                to='/'
+                                className="block text-sm text-muted-foreground hover:text-primary transition-colors font-light" >
+                                Home
+                            </NavLink>
+
+                            <NavLink
+                                to='/services'
+                                className="block text-sm text-muted-foreground hover:text-primary transition-colors font-light" >
                                 Services
-                            </button>
-                            <button
-                                onClick={() => scrollToSection("testimonials")}
-                                className="block text-sm text-muted-foreground hover:text-primary transition-colors font-light"
-                            >
-                                Testimonials
-                            </button>
+                            </NavLink>
+
+                            <NavLink to='/aboutOurInstructors'
+                                className="block text-sm text-muted-foreground hover:text-primary transition-colors font-light">
+                                Meet our Instructors
+                            </NavLink>
+
+                            <NavLink to='/courses'
+                                className="block text-sm text-muted-foreground hover:text-primary transition-colors font-light">
+                                Courses
+                            </NavLink>
                         </div>
                     </div>
 
-                    {/* Services */}
+                    {/* Services
                     <div className="space-y-5">
                         <h4 className="font-light text-foreground tracking-wide">Services</h4>
                         <div className="space-y-3">
@@ -56,29 +68,23 @@ export const Footer = () => {
                             <p className="text-sm text-muted-foreground font-light">Karmic Healing</p>
                             <p className="text-sm text-muted-foreground font-light">Entity Removal</p>
                         </div>
-                    </div>
+                    </div> */}
 
                     {/* Social Links */}
                     <div className="space-y-5">
                         <h4 className="font-light text-foreground tracking-wide">Connect</h4>
                         <div className="flex space-x-4">
-                            <a
+                            {/* <a
                                 href="#"
                                 className="w-11 h-11 rounded-2xl bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-all duration-300 hover:scale-110"
                             >
                                 <Facebook className="w-5 h-5 text-primary" />
-                            </a>
+                            </a> */}
                             <a
                                 href="#"
                                 className="w-11 h-11 rounded-2xl bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-all duration-300 hover:scale-110"
                             >
                                 <Instagram className="w-5 h-5 text-primary" />
-                            </a>
-                            <a
-                                href="#"
-                                className="w-11 h-11 rounded-2xl bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-all duration-300 hover:scale-110"
-                            >
-                                <Youtube className="w-5 h-5 text-primary" />
                             </a>
                             <a
                                 href="mailto:contact@advaithealing.com"

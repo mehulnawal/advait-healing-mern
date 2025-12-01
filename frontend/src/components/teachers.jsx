@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import deepa from "../assets/founder/founder3.jpg";
 import mona from "../assets/teachers/teacher-mona.jpeg";
 import sunny from "../assets/teachers/teacher-sunny.jpeg";
@@ -27,6 +28,14 @@ const instructors = [
 ];
 
 export default function AboutInstructors() {
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    }, []);
+
     return (
         <section className="bg-[#FFFBF2] px-5 md:px-[50px] py-12">
             <div className="max-w-7xl mx-auto">

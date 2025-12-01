@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from "react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import logo from "../assets/logo/advait-healing-logo2.png";
 import { CalendarHeart, Menu, X } from "lucide-react";
 import { Footer } from "./footer";
@@ -15,6 +15,13 @@ export const Navbar = () => {
         setOpen(true);
     };
 
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    }, []);
+
     return (
         <>
             {/* NAVBAR */}
@@ -28,6 +35,19 @@ export const Navbar = () => {
 
                     <ul className="hidden md:flex justify-between gap-5">
                         <li></li>
+
+                        <li>
+                            <NavLink
+                                to="/"
+                                className={({ isActive }) =>
+                                    `relative pb-1 transition-all
+                                    ${isActive ? "text-[#7C5190] after:w-full after:bg-[#7C5190]" :
+                                        "text-black after:w-0 after:bg-transparent"}
+                                    after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
+                                }>
+                                Home
+                            </NavLink>
+                        </li>
 
                         <li>
                             <NavLink
@@ -101,7 +121,21 @@ export const Navbar = () => {
                 </div>
 
                 {/* Menu Items */}
-                <ul className="flex flex-col gap-6 p-6 text-[18px] text-black">
+                <ul className="flex flex-col  !space-y-10 p-6  text-[18px] text-black">
+
+                    <li>
+                        <NavLink
+                            to="/"
+                            className={({ isActive }) =>
+                                `relative pb-1 transition-all
+                                    ${isActive ? "text-[#7C5190] after:w-full after:bg-[#7C5190]" :
+                                    "text-black after:w-0 after:bg-transparent"}
+                                    after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
+                            }>
+                            Home
+                        </NavLink>
+                    </li>
+
                     <li>
                         <NavLink
                             to="/services"
@@ -116,44 +150,47 @@ export const Navbar = () => {
                             Services
                         </NavLink>
 
-                        <li>
-                            <NavLink
-                                to="/aboutOurInstructors"
-                                className={({ isActive }) =>
-                                    `relative pb-1 
-                                ${isActive ? "after:w-full after:bg-[#7C5190]" :
-                                        "after:w-0 after:bg-transparent"}
-                                after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
-                                }
-                            >
-                                About Us
-                            </NavLink>
-                        </li>
-
-                        <li>
-                            <NavLink
-                                to="/courses"
-                                className={({ isActive }) =>
-                                    `relative pb-1 
-                                ${isActive ? "after:w-full after:bg-[#7C5190]" :
-                                        "after:w-0 after:bg-transparent"}
-                                after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
-                                }
-                            >
-                                Courses
-                            </NavLink>
-                        </li>
                     </li>
 
-                    <NavLink to='bookMySession'>
-                        <button
-                            className="flex items-center gap-2 bg-[#7C5190] text-white w-fit py-2 px-3 rounded-2xl"
-                            onClick={() => setOpen(false)}
+                    <li>
+                        <NavLink
+                            to="/aboutOurInstructors"
+                            className={({ isActive }) =>
+                                `relative pb-1 
+                                ${isActive ? "after:w-full after:bg-[#7C5190]" :
+                                    "after:w-0 after:bg-transparent"}
+                                after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
+                            }
                         >
-                            <CalendarHeart size={18} />
-                            <span>Book Your Session</span>
-                        </button>
-                    </NavLink>
+                            About Us
+                        </NavLink>
+                    </li>
+
+                    <li>
+                        <NavLink
+                            to="/courses"
+                            className={({ isActive }) =>
+                                `relative pb-1 
+                                ${isActive ? "after:w-full after:bg-[#7C5190]" :
+                                    "after:w-0 after:bg-transparent"}
+                                after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
+                            }
+                        >
+                            Courses
+                        </NavLink>
+                    </li>
+
+                    <li>
+                        <NavLink to='bookMySession'>
+                            <button
+                                className="flex items-center gap-2 bg-[#7C5190] text-white w-fit py-2 px-3 rounded-2xl"
+                                onClick={() => setOpen(false)}
+                            >
+                                <CalendarHeart size={18} />
+                                <span>Book Your Session</span>
+                            </button>
+                        </NavLink>
+                    </li>
                 </ul>
             </div>
 
