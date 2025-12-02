@@ -104,7 +104,7 @@ export default function BookMySession() {
     const errorText = "text-red-600 text-sm mt-1";
 
     return (
-        <section className="relative bg-[#FFFBF2] px-5 md:px-[50px] py-20 text-black">
+        <section className="relative bg-[#FFFBF2] px-1 md:px-[50px] py-20 text-black">
             {/* Background Glow */}
             <div className="absolute inset-0 flex justify-center opacity-20 pointer-events-none">
                 <div className="w-[600px] h-[600px] bg-purple-200/40 rounded-full blur-3xl"></div>
