@@ -68,7 +68,7 @@ export function Courses() {
 
 
     return (
-        <section className="bg-[#FFFBF2] px-6 md:px-[50px] py-12">
+        <section className="bg-[#FFFBF2] px-2 md:px-[50px] py-12">
             <div className="max-w-7xl mx-auto">
 
                 {/* Page Heading */}

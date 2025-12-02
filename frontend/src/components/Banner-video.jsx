@@ -2,7 +2,7 @@ import bannerVideo from "../assets/banner/banner-video.mp4";
 
 export const BannerVideo = () => {
     return (
-        <section className="px-5 md:px-[50px] lg:px-[70px] py-16 bg-[#FFFBF2]">
+        <section className="px-2 md:px-[50px] lg:px-[70px] py-16 bg-[#FFFBF2]">
 
             <div className="max-w-6xl mx-auto">
 

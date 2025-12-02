@@ -25,7 +25,7 @@ export const Navbar = () => {
     return (
         <>
             {/* NAVBAR */}
-            <div className="h-30 px-1 md:px-[50px] lg:px-[70px] text-black text-[17px]">
+            <div className="h-30 px-2 md:px-[50px] lg:px-[70px] text-black text-[17px]">
                 <nav className="flex items-center justify-between md:grid md:grid-cols-3 h-full">
 
                     {/* Logo */}

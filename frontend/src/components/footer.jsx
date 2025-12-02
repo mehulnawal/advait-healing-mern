@@ -15,7 +15,7 @@ export const Footer = () => {
     }, []);
 
     return (
-        <footer className="px-5 md:px-[50px] lg:px-[70px] bg-secondary/30 border-t border-border/40 text-white bg-[#0f0f0f]">
+        <footer className="px-2 md:px-[50px] lg:px-[70px] bg-secondary/30 border-t border-border/40 text-white bg-[#0f0f0f]">
             <div className="container mx-auto pt-16">
                 <div className="grid md:grid-cols-3 gap-12">
 
@@ -73,7 +73,7 @@ export const Footer = () => {
                     {/* Social Links */}
                     <div className="space-y-5">
                         <h4 className="font-light text-foreground tracking-wide">Connect</h4>
-                        <div className="flex space-x-4">
+                        <div className="flex">
                             {/* <a
                                 href="#"
                                 className="w-11 h-11 rounded-2xl bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-all duration-300 hover:scale-110"

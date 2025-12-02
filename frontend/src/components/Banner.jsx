@@ -3,7 +3,7 @@ import bannerRightImg from "../assets/banner/banner-right-img.png";
 
 export const Banner = () => {
     return (
-        <section className="relative w-full min-h-[90vh] flex items-center bg-cover bg-center px-5 md:px-[50px] lg:px-[70px] py-12"
+        <section className="relative w-full min-h-[90vh] flex items-center bg-cover bg-center px-2 md:px-[50px] lg:px-[70px] py-12"
             style={{ backgroundImage: `url(${heroBg})` }}
         >
             {/* Overlay */}
