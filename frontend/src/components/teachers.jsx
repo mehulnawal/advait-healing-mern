@@ -1,11 +1,11 @@
 import { useEffect } from "react";
-import deepa from "../assets/founder/founder3.jpg";
+import deepa from "../assets/founder/founder4.jpeg";
 import mona from "../assets/teachers/teacher-mona.jpeg";
 import sunny from "../assets/teachers/teacher-sunny.jpeg";
 
 const instructors = [
     {
-        name: "Deepa Sharma",
+        name: "Deepshikha",
         title: "Energy Healer & Spiritual Mentor",
         image: deepa,
         bio: "Deepa is a certified energy healer with 7+ years of experience in chakra balancing, karmic clearing and angelic healing. Her sessions bring clarity, emotional recovery, and deep inner peace.",

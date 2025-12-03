@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 const instructorCourses = [
     {
-        instructor: "Deepa Sharma",
+        instructor: "Deepshikha",
         title: "Energy Healer & Spiritual Mentor",
         courses: [
             {

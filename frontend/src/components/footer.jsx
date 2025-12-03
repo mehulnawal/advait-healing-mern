@@ -81,7 +81,8 @@ export const Footer = () => {
                                 <Facebook className="w-5 h-5 text-primary" />
                             </a> */}
                             <a
-                                href="#"
+                                href="https://www.instagram.com/advait_healing?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                                target="_blank"
                                 className="w-11 h-11 rounded-2xl bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-all duration-300 hover:scale-110"
                             >
                                 <Instagram className="w-5 h-5 text-primary" />

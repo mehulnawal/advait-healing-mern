@@ -100,14 +100,14 @@ export default function ChatBot({ botOpen, setBotOpen, closeNavbar }) {
                 </div>
 
                 {/* Search */}
-                <div className="px-4 pt-4 pb-2 bg-white">
+                <div className="px-4 pt-4 pb-2 bg-white ">
                     <input
                         type="text"
                         value={filter}
                         placeholder="Search FAQs..."
                         onFocus={() => setShowInput(true)}
                         onChange={(e) => setFilter(e.target.value)}
-                        className="w-full border rounded-lg px-3 py-2 text-sm text-gray-800"
+                        className="w-full border rounded-lg px-3 py-2 text-sm text-gray-800 !text-white"
                     />
                 </div>
 

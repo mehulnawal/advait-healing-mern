@@ -70,7 +70,7 @@ const ServiceCard = ({ image, title, desc, Icon, onKnowMore }) => {
 
                 {/* Circular Image */}
                 <div className="flex justify-center">
-                    <div className="w-48 h-48 rounded-full overflow-hidden shadow-md bg-gray-100">
+                    <div className="w-48 h-48 rounded-full overflow-hidden bg-gray-100">
                         <img
                             src={image}
                             alt={title}
@@ -110,9 +110,6 @@ const ServiceModal = ({ open, onClose, service }) => {
     if (!open || !service) return null;
 
     const { title, desc, image, process, benefits, duration, price } = service;
-
-
-
 
     return (
         <div
