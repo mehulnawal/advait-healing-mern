@@ -68,78 +68,95 @@ export function Courses() {
 
 
     return (
-        <section className="bg-[#FFFBF2] px-2 md:px-[50px] py-12">
-            <div className="max-w-7xl mx-auto">
+        <>
+            <section className="bg-[#FFFBF2] px-2 md:px-[50px] py-12">
+                <div className="max-w-7xl mx-auto">
 
-                {/* Page Heading */}
-                <div className="text-center mb-16">
-                    <h2 className="text-5xl font-extrabold text-purple-800 font-[Cormorant_Garamond]">
-                        Our Courses
-                    </h2>
-                    <p className="text-gray-600 max-w-3xl mx-auto mt-3 text-lg">
-                        Explore professional certification and transformational learning with our expert instructors.
-                    </p>
-                </div>
+                    {/* Page Heading */}
+                    <div className="text-center mb-16">
+                        <h2 className="text-5xl font-extrabold text-purple-800 font-[Cormorant_Garamond]">
+                            Our Courses
+                        </h2>
+                        <p className="text-gray-600 max-w-3xl mx-auto mt-3 text-lg">
+                            Explore professional certification and transformational learning with our expert instructors.
+                        </p>
+                    </div>
 
-                {/* Instructor Sections */}
-                <div className="space-y-16">
-                    {instructorCourses.map((ins, idx) => (
-                        <div key={idx} className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    {/* Instructor Sections */}
+                    <div className="space-y-16">
+                        {instructorCourses.map((ins, idx) => (
+                            <div key={idx} className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
 
-                            {/* Instructor Name */}
-                            <h3 className="text-3xl font-bold text-purple-800 font-[Cormorant_Garamond]">
-                                {ins.instructor}
-                            </h3>
+                                {/* Instructor Name */}
+                                <h3 className="text-3xl font-bold text-purple-800 font-[Cormorant_Garamond]">
+                                    {ins.instructor}
+                                </h3>
 
-                            {/* Title */}
-                            <p className="text-purple-600 mt-1 text-sm font-medium uppercase tracking-wide">
-                                {ins.title}
-                            </p>
+                                {/* Title */}
+                                <p className="text-purple-600 mt-1 text-sm font-medium uppercase tracking-wide">
+                                    {ins.title}
+                                </p>
 
-                            {/* Courses List */}
-                            <div className="mt-6 space-y-5">
-                                {ins.courses.map((course, i) => (
-                                    <div
-                                        key={i}
-                                        className="p-5 bg-[#F9F4FF] rounded-xl border border-purple-100 shadow-sm"
-                                    >
-                                        {/* Course Name */}
-                                        <h4 className="text-xl font-semibold text-purple-900">
-                                            {course.name}
-                                        </h4>
+                                {/* Courses List */}
+                                <div className="mt-6 space-y-5">
+                                    {ins.courses.map((course, i) => (
+                                        <div
+                                            key={i}
+                                            className="p-5 bg-[#F9F4FF] rounded-xl border border-purple-100 shadow-sm"
+                                        >
+                                            {/* Course Name */}
+                                            <h4 className="text-xl font-semibold text-purple-900">
+                                                {course.name}
+                                            </h4>
 
-                                        {/* Duration */}
-                                        {course.duration && (
-                                            <p className="text-gray-700 mt-1">
-                                                <strong>Duration:</strong> {course.duration}
-                                            </p>
-                                        )}
+                                            {/* Duration */}
+                                            {course.duration && (
+                                                <p className="text-gray-700 mt-1">
+                                                    <strong>Duration:</strong> {course.duration}
+                                                </p>
+                                            )}
 
-                                        {/* Duration Options */}
-                                        {course.durationOptions && (
-                                            <div className="mt-2">
-                                                <strong className="text-gray-700">Duration Options:</strong>
-                                                <div className="flex flex-wrap gap-2 mt-1">
-                                                    {course.durationOptions.map((d, j) => (
-                                                        <span
-                                                            key={j}
-                                                            className="bg-purple-200 text-purple-800 px-3 py-1 rounded-full text-xs font-medium"
-                                                        >
-                                                            {d}
-                                                        </span>
-                                                    ))}
+                                            {/* Duration Options */}
+                                            {course.durationOptions && (
+                                                <div className="mt-2">
+                                                    <strong className="text-gray-700">Duration Options:</strong>
+                                                    <div className="flex flex-wrap gap-2 mt-1">
+                                                        {course.durationOptions.map((d, j) => (
+                                                            <span
+                                                                key={j}
+                                                                className="bg-purple-200 text-purple-800 px-3 py-1 rounded-full text-xs font-medium"
+                                                            >
+                                                                {d}
+                                                            </span>
+                                                        ))}
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        )}
-                                    </div>
-                                ))}
+                                            )}
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
+
                 </div>
 
-            </div>
-        </section>
+                <div className="mt-16 text-center">
+                    <p className="text-xl md:text-2xl text-purple-900 font-medium font-[Cormorant_Garamond] leading-relaxed">
+                        Let us guide you on your journey to becoming a healer and serving the community.
+                    </p>
+
+                    <p className="mt-2 text-gray-600 text-base md:text-lg">
+                        We also offer professional courses in <span className="text-purple-700 font-semibold">Reiki</span> and other transformative healing practices.
+                    </p>
+
+                    <div className="w-24 h-1 bg-purple-300 mx-auto mt-6 rounded-full"></div>
+                </div>
+
+
+            </section>
+
+        </>
     );
 }
 

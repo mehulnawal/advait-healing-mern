@@ -1,6 +1,14 @@
 import { NavLink } from "react-router";
 import { useEffect, useState } from "react";
 import founderImg from "../assets/founder/founder3.jpg";
+import {
+    Sparkles,
+    RefreshCcw,
+    Dna,
+    PawPrint,
+    History,
+    Shield
+} from "lucide-react";
 
 // Scroll Animation Hook
 const useRevealOnScroll = () => {
@@ -43,10 +51,12 @@ export const About = () => {
         <section className="px-2 md:px-[50px] lg:px-[70px] py-24 bg-[#FFFBF2] font-sans">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-                {/* RIGHT IMAGE FIRST ON MOBILE */}
+                {/* IMAGE */}
                 <div
                     ref={setRightRef}
-                    className={` order-1 md:order-2 flex justify-center md:justify-end  overflow-hidden ${rightVisible ? "animate-slide-right" : "opacity-0"} `} >
+                    className={`order-1 md:order-2 flex justify-center md:justify-end overflow-hidden ${rightVisible ? "animate-slide-right" : "opacity-0"
+                        }`}
+                >
                     <img
                         src={founderImg}
                         alt="Founder of Advait Healing"
@@ -54,10 +64,12 @@ export const About = () => {
                     />
                 </div>
 
-                {/* LEFT TEXT (SECOND ON MOBILE) */}
+                {/* TEXT */}
                 <div
                     ref={setLeftRef}
-                    className={`order-2 md:order-1  overflow-hidden pb-6 ${leftVisible ? "animate-slide-left" : "opacity-0"} `} >
+                    className={`order-2 md:order-1 overflow-hidden pb-6 ${leftVisible ? "animate-slide-left" : "opacity-0"
+                        }`}
+                >
                     <h2 className="text-5xl font-[Cormorant_Garamond] font-extrabold text-purple-800 mb-4">
                         About Advait Healing
                     </h2>
@@ -69,25 +81,65 @@ export const About = () => {
                         and soul harmony.
                     </p>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
-                        <div className="bg-white shadow-md rounded-xl p-4 text-center">
-                            <p className="text-purple-800 font-semibold">Aura Karmic<br />Release</p>
-                        </div>
-                        <div className="bg-white shadow-md rounded-xl p-4 text-center">
-                            <p className="text-purple-800 font-semibold">Karmic<br />Imprint Release</p>
-                        </div>
-                        <div className="bg-white shadow-md rounded-xl p-4 text-center">
-                            <p className="text-purple-800 font-semibold">Entity /<br />J-Seal Clearing</p>
+                    {/* SERVICES */}
+                    <div className="mt-10 mb-10">
+                        <h3 className="text-2xl font-[Cormorant_Garamond] font-semibold text-purple-800 mb-6">
+                            Our Healing Services
+                        </h3>
+
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                            <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
+                                <Sparkles className="w-8 h-8 text-purple-700 mb-4 group-hover:scale-110 transition" />
+                                <p className="text-purple-800 font-semibold text-center">
+                                    Finding root-cause of your<br />Problem
+                                </p>
+                            </div>
+
+                            <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
+                                <RefreshCcw className="w-8 h-8 text-purple-700 mb-4 group-hover:scale-110 transition" />
+                                <p className="text-purple-800 font-semibold text-center">
+                                    Releasing<br />Karmic Blockages
+                                </p>
+                            </div>
+
+                            <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
+                                <Dna className="w-8 h-8 text-purple-700 mb-4 group-hover:scale-110 transition" />
+                                <p className="text-purple-800 font-semibold text-center">
+                                    Activating your<br />DNA
+                                </p>
+                            </div>
+
+                            <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
+                                <PawPrint className="w-8 h-8 text-purple-700 mb-4 group-hover:scale-110 transition" />
+                                <p className="text-purple-800 font-semibold text-center">
+                                    Animal<br />Communication
+                                </p>
+                            </div>
+
+                            <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
+                                <History className="w-8 h-8 text-purple-700 mb-4 group-hover:scale-110 transition" />
+                                <p className="text-purple-800 font-semibold text-center">
+                                    Animal<br />Past life Regression
+                                </p>
+                            </div>
+
+                            <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
+                                <Shield className="w-8 h-8 text-purple-700 mb-4 group-hover:scale-110 transition" />
+                                <p className="text-purple-800 font-semibold text-center">
+                                    Black magic<br />Removal
+                                </p>
+                            </div>
+
                         </div>
                     </div>
 
-                    <NavLink to='/aboutOurInstructors'>
-                        <span className="bg-[#7C5190] text-white py-2.5 px-6 rounded-full font-medium text-[15px] hover:bg-[#a759c9f5] transition">
+                    <NavLink to="/aboutOurInstructors">
+                        <span className="inline-block bg-[#7C5190] text-white py-2.5 px-6 rounded-full font-medium text-[15px] hover:bg-[#a759c9f5] transition">
                             More About Us
                         </span>
                     </NavLink>
                 </div>
-
             </div>
         </section>
     );
