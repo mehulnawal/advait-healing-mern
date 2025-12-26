@@ -7,7 +7,7 @@ export default function HowIWork() {
         <>
             {/* <Banner /> */}
 
-            <div className="px-2 md:px-[50px] lg:px-[70px] min-h-screen  bg-[#FFFBF2] text-[#050505] ">
+            <div className="px-2 md:px-[50px] lg:px-[70px] min-h-screen  bg-[#FFFFFF] text-[#050505] ">
 
                 {/* Page Container */}
                 <div className="max-w-6xl mx-auto pb-20 h-100">

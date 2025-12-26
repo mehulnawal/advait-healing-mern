@@ -1,24 +1,24 @@
 import { useEffect } from "react";
 
 const instructorCourses = [
-    {
-        instructor: "Deepshikha",
-        title: "Energy Healer & Spiritual Mentor",
-        courses: [
-            {
-                name: "Chakra Healing Certification",
-                duration: "2 Days",
-            },
-            {
-                name: "Karmic Clearing Workshop",
-                duration: "Single Session (75 Minutes)",
-            },
-            {
-                name: "Angelic Healing Masterclass",
-                durationOptions: ["7 Days", "21 Days", "45 Days"],
-            }
-        ]
-    },
+    // {
+    //     instructor: "Deepshikha",
+    //     title: "Energy Healer & Spiritual Mentor",
+    //     courses: [
+    //         {
+    //             name: "Chakra Healing Certification",
+    //             duration: "2 Days",
+    //         },
+    //         {
+    //             name: "Karmic Clearing Workshop",
+    //             duration: "Single Session (75 Minutes)",
+    //         },
+    //         {
+    //             name: "Angelic Healing Masterclass",
+    //             durationOptions: ["7 Days", "21 Days", "45 Days"],
+    //         }
+    //     ]
+    // },
     {
         instructor: "Mona Dixit",
         title: "Reiki Master & Energy Healing Specialist",
@@ -37,24 +37,24 @@ const instructorCourses = [
             }
         ]
     },
-    {
-        instructor: "Sunny Mann",
-        title: "Animal Communicator & Spiritual Coach",
-        courses: [
-            {
-                name: "Animal Communication Course",
-                durationOptions: ["1 Month", "3 Months"]
-            },
-            {
-                name: "Intuitive Healing for Pets",
-                duration: "2 Days"
-            },
-            {
-                name: "Spiritual Coaching for Empaths",
-                durationOptions: ["7 Days", "30 Days", "90 Days"]
-            }
-        ]
-    }
+    // {
+    //     instructor: "Sunny Mann",
+    //     title: "Animal Communicator & Spiritual Coach",
+    //     courses: [
+    //         {
+    //             name: "Animal Communication Course",
+    //             durationOptions: ["1 Month", "3 Months"]
+    //         },
+    //         {
+    //             name: "Intuitive Healing for Pets",
+    //             duration: "2 Days"
+    //         },
+    //         {
+    //             name: "Spiritual Coaching for Empaths",
+    //             durationOptions: ["7 Days", "30 Days", "90 Days"]
+    //         }
+    //     ]
+    // }
 ];
 
 export function Courses() {
@@ -69,7 +69,7 @@ export function Courses() {
 
     return (
         <>
-            <section className="bg-[#FFFBF2] px-2 md:px-[50px] py-12">
+            <section className="bg-[#FFFFFF] px-2 md:px-[50px] py-12">
                 <div className="max-w-7xl mx-auto">
 
                     {/* Page Heading */}

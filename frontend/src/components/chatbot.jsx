@@ -81,7 +81,7 @@ export default function ChatBot({ botOpen, setBotOpen, closeNavbar }) {
                 {/* Header */}
                 <div className="relative px-4 py-3 border-b flex justify-between items-center bg-white">
                     <div className="flex items-center gap-3">
-                        <div className="w-11 h-11 rounded-full bg-[#FFFBF2] flex items-center justify-center">
+                        <div className="w-11 h-11 rounded-full bg-[#FFFFFF] flex items-center justify-center">
                             <IconChat />
                         </div>
                         <div>

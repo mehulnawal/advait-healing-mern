@@ -60,7 +60,7 @@ const ServiceCard = ({ image, title, desc, Icon, onKnowMore }) => {
 
             {/* Icon */}
             <div className="flex justify-center -mb-8 z-10 relative">
-                <div className="w-16 h-16 rounded-full bg-[#FFFBF2] border border-gray-300 shadow flex items-center justify-center">
+                <div className="w-16 h-16 rounded-full bg-[#FFFFFF] border border-gray-300 shadow flex items-center justify-center">
                     <Icon className="w-7 h-7 text-purple-700 stroke-[1.6px]" />
                 </div>
             </div>
@@ -472,7 +472,7 @@ export const Services = () => {
 
 
     return (
-        <section className="px-2 md:px-[50px] lg:px-[70px] py-6 bg-[#FFFBF2] font-sans">
+        <section className="px-2 md:px-[50px] lg:px-[70px] py-6 bg-[#FFFFFF] font-sans">
             <div className="max-w-7xl mx-auto">
 
                 {/* Heading */}

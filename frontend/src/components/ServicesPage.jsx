@@ -31,7 +31,7 @@ const ServiceCard = ({ image, title, short, Icon, onKnowMore }) => {
         <div className="w-full flex flex-col items-center">
             {/* Icon */}
             <div className="flex justify-center -mb-10 z-10 relative">
-                <div className="w-20 h-20 rounded-full bg-[#FFFBF2] border-b-4 border-gray-200 shadow-md flex items-center justify-center">
+                <div className="w-20 h-20 rounded-full bg-[#FFFFFF] border-b-4 border-gray-200 shadow-md flex items-center justify-center">
                     <Icon className="w-10 h-10 text-[#050505] stroke-[1.5px]" />
                 </div>
             </div>
@@ -356,7 +356,7 @@ export default function ServicesPage() {
     );
 
     return (
-        <div className="min-h-screen w-full bg-[#FFFBF2] text-[#050505] py-12">
+        <div className="min-h-screen w-full bg-[#FFFFFF] text-[#050505] py-12">
             {/* If you have a Navbar component, import and include here */}
             {/* <Navbar /> */}
 

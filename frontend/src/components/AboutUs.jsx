@@ -48,7 +48,7 @@ export const About = () => {
     }, []);
 
     return (
-        <section className="px-2 md:px-[50px] lg:px-[70px] py-24 bg-[#FFFBF2] font-sans">
+        <section className="px-2 md:px-[50px] lg:px-[70px] py-24 bg-[#FFFFFF] font-sans">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
                 {/* IMAGE */}

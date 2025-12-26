@@ -7,7 +7,7 @@ export const Banner = () => {
             style={{ backgroundImage: `url(${heroBg})` }}
         >
             {/* Overlay */}
-            <div className="absolute inset-0 bg-[#FFFBF2]/80 backdrop-blur-[2px]"></div>
+            <div className="absolute inset-0 bg-[#FFFFFF]/80 backdrop-blur-[2px]"></div>
 
             <div className="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center z-10">
 

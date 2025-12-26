@@ -37,7 +37,7 @@ export default function AboutInstructors() {
     }, []);
 
     return (
-        <section className="bg-[#FFFBF2] px-2 md:px-[50px] py-12">
+        <section className="bg-[#FFFFFF] px-2 md:px-[50px] py-12">
             <div className="max-w-7xl mx-auto">
 
                 {/* Heading */}
