@@ -113,7 +113,7 @@ export default function BookMySession() {
             <div className="relative max-w-3xl mx-auto bg-white px-2  md:px-10 py-10 shadow-2xl rounded-3xl border border-gray-100">
 
                 {/* Heading */}
-                <h2 className="text-5xl font-extrabold text-purple-800 mb-3 text-center font-[Cormorant_Garamond]">
+                <h2 className="text-5xl font-extrabold text-black mb-3 text-center font-[Cormorant_Garamond]">
                     Book My Session
                 </h2>
                 <p className="text-center text-gray-600 mb-6">

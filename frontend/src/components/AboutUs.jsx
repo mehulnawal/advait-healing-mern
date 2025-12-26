@@ -70,7 +70,7 @@ export const About = () => {
                     className={`order-2 md:order-1 overflow-hidden pb-6 ${leftVisible ? "animate-slide-left" : "opacity-0"
                         }`}
                 >
-                    <h2 className="text-5xl font-[Cormorant_Garamond] font-extrabold text-purple-800 mb-4">
+                    <h2 className="text-5xl font-[Cormorant_Garamond] font-extrabold text-black mb-4">
                         About Advait Healing
                     </h2>
 
@@ -83,7 +83,7 @@ export const About = () => {
 
                     {/* SERVICES */}
                     <div className="mt-10 mb-10">
-                        <h3 className="text-2xl font-[Cormorant_Garamond] font-semibold text-purple-800 mb-6">
+                        <h3 className="text-2xl font-[Cormorant_Garamond] font-semibold text-black mb-6">
                             Our Healing Services
                         </h3>
 
@@ -91,42 +91,42 @@ export const About = () => {
 
                             <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
                                 <Sparkles className="w-8 h-8 text-purple-700 mb-4 group-hover:scale-110 transition" />
-                                <p className="text-purple-800 font-semibold text-center">
+                                <p className="text-black font-semibold text-center">
                                     Finding root-cause of your<br />Problem
                                 </p>
                             </div>
 
                             <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
                                 <RefreshCcw className="w-8 h-8 text-purple-700 mb-4 group-hover:scale-110 transition" />
-                                <p className="text-purple-800 font-semibold text-center">
+                                <p className="text-black font-semibold text-center">
                                     Releasing<br />Karmic Blockages
                                 </p>
                             </div>
 
                             <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
                                 <Dna className="w-8 h-8 text-purple-700 mb-4 group-hover:scale-110 transition" />
-                                <p className="text-purple-800 font-semibold text-center">
+                                <p className="text-black font-semibold text-center">
                                     Activating your<br />DNA
                                 </p>
                             </div>
 
                             <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
                                 <PawPrint className="w-8 h-8 text-purple-700 mb-4 group-hover:scale-110 transition" />
-                                <p className="text-purple-800 font-semibold text-center">
+                                <p className="text-black font-semibold text-center">
                                     Animal<br />Communication
                                 </p>
                             </div>
 
                             <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
                                 <History className="w-8 h-8 text-purple-700 mb-4 group-hover:scale-110 transition" />
-                                <p className="text-purple-800 font-semibold text-center">
+                                <p className="text-black font-semibold text-center">
                                     Past life<br />Regression
                                 </p>
                             </div>
 
                             <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
                                 <Shield className="w-8 h-8 text-purple-700 mb-4 group-hover:scale-110 transition" />
-                                <p className="text-purple-800 font-semibold text-center">
+                                <p className="text-black font-semibold text-center">
                                     Black magic<br />Removal
                                 </p>
                             </div>

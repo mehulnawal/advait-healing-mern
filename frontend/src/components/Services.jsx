@@ -87,7 +87,7 @@ const ServiceCard = ({ image, title, desc, Icon, onKnowMore }) => {
             </div>
 
             {/* Title */}
-            <h3 className="text-center mt-5 text-xl font-semibold text-purple-800">
+            <h3 className="text-center mt-5 text-xl font-semibold text-black">
                 {title}
             </h3>
 
@@ -477,7 +477,7 @@ export const Services = () => {
 
                 {/* Heading */}
                 <div className="text-center mb-16">
-                    <h2 className="text-5xl font-extrabold mb-4 text-purple-800 font-[Cormorant_Garamond] tracking-tight">
+                    <h2 className="text-5xl font-extrabold mb-4 text-black font-[Cormorant_Garamond] tracking-tight">
                         Our Healing Services
                     </h2>
                     <p className="text-gray-600 max-w-3xl mx-auto text-lg">
@@ -492,7 +492,7 @@ export const Services = () => {
                             return (
                                 <div
                                     key={idx}
-                                    className="col-span-full text-3xl font-bold uppercase my-2 text-center text-[#7C5190]"
+                                    className="col-span-full text-3xl font-bold uppercase my-2 text-center text-black"
                                     style={{ fontFamily: "Cormorant Garamond, serif" }}
                                 >
                                     {item.label}

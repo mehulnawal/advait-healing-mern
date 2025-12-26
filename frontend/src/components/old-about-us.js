@@ -44,7 +44,7 @@ export const About = () => {
                 <div ref={setLeftRef}
                     className={`${leftVisible ? "animate-slide-left" : "opacity-0"}`}
                 >
-                    <h2 className="text-5xl font-[Cormorant_Garamond] font-extrabold text-purple-800 mb-4">
+                    <h2 className="text-5xl font-[Cormorant_Garamond] font-extrabold text-black mb-4">
                         About Advait Healing
                     </h2>
 
@@ -58,13 +58,13 @@ export const About = () => {
                     {/* 3 Spiritual Points */}
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
                         <div className="bg-white shadow-md rounded-xl p-4 text-center">
-                            <p className="text-purple-800 font-semibold">Chakra<br />Balancing</p>
+                            <p className="text-black font-semibold">Chakra<br />Balancing</p>
                         </div>
                         <div className="bg-white shadow-md rounded-xl p-4 text-center">
-                            <p className="text-purple-800 font-semibold">Karmic<br />Imprint Release</p>
+                            <p className="text-black font-semibold">Karmic<br />Imprint Release</p>
                         </div>
                         <div className="bg-white shadow-md rounded-xl p-4 text-center">
-                            <p className="text-purple-800 font-semibold">Entity /<br />J-Seal Clearing</p>
+                            <p className="text-black font-semibold">Entity /<br />J-Seal Clearing</p>
                         </div>
                     </div>
 

@@ -15,7 +15,7 @@ export default function HowIWork() {
                     {/* ---------- HERO SECTION ---------- */}
                     <section className="text-center mb-20">
                         <h1
-                            className="text-5xl md:text-6xl font-semibold mb-6 text-purple-800"
+                            className="text-5xl md:text-6xl font-semibold mb-6 text-black"
                             style={{ fontFamily: "Cormorant Garamond, serif" }}
                         >
                             How We Work
@@ -44,7 +44,7 @@ export default function HowIWork() {
                         <div className="bg-white rounded-3xl p-8 shadow-lg border border-[#e6dbc0]">
                             <ScanLine className="w-10 h-10 mb-6 text-[#050505]" />
                             <h2
-                                className="text-3xl font-bold mb-4 text-purple-800"
+                                className="text-3xl font-bold mb-4 text-black"
                                 style={{ fontFamily: "Cormorant Garamond, serif" }}
                             >
                                 1. Book Your Session
@@ -59,7 +59,7 @@ export default function HowIWork() {
                         <div className="bg-white rounded-3xl p-8 shadow-lg border border-[#e6dbc0]">
                             <HandHeart className="w-10 h-10 mb-6 text-[#050505]" />
                             <h2
-                                className="text-3xl font-bold mb-4 text-purple-800"
+                                className="text-3xl font-bold mb-4 text-black"
                                 style={{ fontFamily: "Cormorant Garamond, serif" }}
                             >
                                 2. Set Your Intention
@@ -74,7 +74,7 @@ export default function HowIWork() {
                         <div className="bg-white rounded-3xl p-8 shadow-lg border border-[#e6dbc0]">
                             <Sparkles className="w-10 h-10 mb-6 text-[#050505]" />
                             <h2
-                                className="text-3xl font-bold mb-4 text-purple-800"
+                                className="text-3xl font-bold mb-4 text-black"
                                 style={{ fontFamily: "Cormorant Garamond, serif" }}
                             >
                                 3. Energy Scan & Clearing
@@ -89,7 +89,7 @@ export default function HowIWork() {
                     {/* ---------- FINAL SECTION ---------- */}
                     <section className="text-center mt-24">
                         <h2
-                            className="text-4xl md:text-5xl font-semibold mb-6 text-purple-800"
+                            className="text-4xl md:text-5xl font-semibold mb-6 text-black"
                             style={{ fontFamily: "Cormorant Garamond, serif" }}
                         >
                             Ready to Begin Your Transformation?

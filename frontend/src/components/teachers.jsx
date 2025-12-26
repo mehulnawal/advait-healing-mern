@@ -42,7 +42,7 @@ export default function AboutInstructors() {
 
                 {/* Heading */}
                 <div className="text-center mb-16">
-                    <h2 className="text-5xl font-extrabold text-purple-800 font-[Cormorant_Garamond]">
+                    <h2 className="text-5xl font-extrabold text-black font-[Cormorant_Garamond]">
                         About Our Instructors
                     </h2>
                     <p className="text-gray-600 max-w-3xl mx-auto mt-3 text-lg">
@@ -72,12 +72,12 @@ export default function AboutInstructors() {
                             <div className="flex flex-col md:text-left text-center">
 
                                 {/* Name */}
-                                <h3 className="text-3xl font-bold text-purple-800 font-[Cormorant_Garamond]">
+                                <h3 className="text-3xl font-bold text-black font-[Cormorant_Garamond]">
                                     {ins.name}
                                 </h3>
 
                                 {/* Title */}
-                                <p className="text-purple-600 text-sm mt-1 font-medium tracking-wide uppercase">
+                                <p className="text-black text-sm mt-1 font-medium tracking-wide uppercase">
                                     {ins.title}
                                 </p>
 

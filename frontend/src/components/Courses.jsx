@@ -74,7 +74,7 @@ export function Courses() {
 
                     {/* Page Heading */}
                     <div className="text-center mb-16">
-                        <h2 className="text-5xl font-extrabold text-purple-800 font-[Cormorant_Garamond]">
+                        <h2 className="text-5xl font-extrabold text-black font-[Cormorant_Garamond]">
                             Our Courses
                         </h2>
                         <p className="text-gray-600 max-w-3xl mx-auto mt-3 text-lg">
@@ -88,12 +88,12 @@ export function Courses() {
                             <div key={idx} className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
 
                                 {/* Instructor Name */}
-                                <h3 className="text-3xl font-bold text-purple-800 font-[Cormorant_Garamond]">
+                                <h3 className="text-3xl font-bold text-black font-[Cormorant_Garamond]">
                                     {ins.instructor}
                                 </h3>
 
                                 {/* Title */}
-                                <p className="text-purple-600 mt-1 text-sm font-medium uppercase tracking-wide">
+                                <p className="text-black mt-1 text-sm font-medium uppercase tracking-wide">
                                     {ins.title}
                                 </p>
 
@@ -105,7 +105,7 @@ export function Courses() {
                                             className="p-5 bg-[#F9F4FF] rounded-xl border border-purple-100 shadow-sm"
                                         >
                                             {/* Course Name */}
-                                            <h4 className="text-xl font-semibold text-purple-900">
+                                            <h4 className="text-xl font-semibold text-black">
                                                 {course.name}
                                             </h4>
 
@@ -124,7 +124,7 @@ export function Courses() {
                                                         {course.durationOptions.map((d, j) => (
                                                             <span
                                                                 key={j}
-                                                                className="bg-purple-200 text-purple-800 px-3 py-1 rounded-full text-xs font-medium"
+                                                                className="bg-purple-200 text-black px-3 py-1 rounded-full text-xs font-medium"
                                                             >
                                                                 {d}
                                                             </span>
@@ -142,7 +142,7 @@ export function Courses() {
                 </div>
 
                 <div className="mt-16 text-center">
-                    <p className="text-xl md:text-2xl text-purple-900 font-medium font-[Cormorant_Garamond] leading-relaxed">
+                    <p className="text-xl md:text-2xl text-black font-medium font-[Cormorant_Garamond] leading-relaxed">
                         Let us guide you on your journey to becoming a healer and serving the community.
                     </p>
 

@@ -25,11 +25,11 @@ export const Banner = () => {
                     {/* Stats */}
                     <div className="grid grid-cols-3 gap-4 mt-10">
                         <div className="bg-white shadow-md rounded-xl p-4 text-center">
-                            <h3 className="text-2xl font-bold text-purple-800">300+</h3>
+                            <h3 className="text-2xl font-bold text-black">300+</h3>
                             <p className="text-gray-600 text-sm">Feel Lighter</p>
                         </div>
                         <div className="bg-white shadow-md rounded-xl p-4 text-center">
-                            <h3 className="text-2xl font-bold text-purple-800">600+</h3>
+                            <h3 className="text-2xl font-bold text-black">600+</h3>
                             <p className="text-gray-600 text-sm">Sessions Done</p>
                         </div>
                     </div>

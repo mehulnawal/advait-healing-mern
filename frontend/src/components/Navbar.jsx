@@ -6,8 +6,8 @@ import { Footer } from "./footer";
 import ChatBot from "./chatbot";
 
 export const Navbar = () => {
-    const [open, setOpen] = useState(false);        // navbar sidebar state
-    const [botOpen, setBotOpen] = useState(false);  // chatbot state (received from ChatBot component)
+    const [open, setOpen] = useState(false);
+    const [botOpen, setBotOpen] = useState(false);
 
     // When Navbar opens → close ChatBot
     const handleNavbarOpen = () => {
