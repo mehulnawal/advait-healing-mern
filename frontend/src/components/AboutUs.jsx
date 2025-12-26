@@ -120,7 +120,7 @@ export const About = () => {
                             <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
                                 <History className="w-8 h-8 text-purple-700 mb-4 group-hover:scale-110 transition" />
                                 <p className="text-purple-800 font-semibold text-center">
-                                    Animal<br />Past life Regression
+                                    Past life<br />Regression
                                 </p>
                             </div>
 
