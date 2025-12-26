@@ -7,9 +7,11 @@ import t2 from "../assets/testimonials/test2.jpg";
 import t3 from "../assets/testimonials/test3.jpg";
 import t4 from "../assets/testimonials/test4.jpg";
 import t5 from "../assets/testimonials/test5.jpg";
+import t6 from "../assets/testimonials/test6-monaMam.png";
+import t7 from "../assets/testimonials/test7-monaMam.png";
 
 const Testimonials = () => {
-    const images = [t1, t2, t3, t4, t5];
+    const images = [t1, t2, t3, t4, t5, t6, t7];
 
     return (
         <section className="px-2 md:px-[50px] lg:px-[70px] py-16 bg-[#FFFBF2]">
