@@ -1,6 +1,7 @@
 import { ArrowRight, ScanLine, HandHeart, Sparkles } from "lucide-react";
 import founderImg from "../assets/founder/founder3.jpg";
 import { Banner } from "./Banner";
+import { NavLink } from "react-router";
 
 export default function HowIWork() {
     return (
@@ -100,9 +101,9 @@ export default function HowIWork() {
                             you every moment through it.
                         </p>
 
-                        <button className="px-8 py-4 bg-[#050505] text-white rounded-full flex items-center gap-3 mx-auto hover:opacity-90 transition">
+                        <NavLink to='/bookMySession' className="w-fit px-8 py-4 bg-[#050505] text-white rounded-full flex items-center gap-3 mx-auto hover:opacity-90 transition">
                             Book a Session <ArrowRight className="w-5 h-5" />
-                        </button>
+                        </NavLink>
                     </section>
                 </div>
             </div>

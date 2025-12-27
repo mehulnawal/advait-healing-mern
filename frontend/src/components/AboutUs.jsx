@@ -90,42 +90,42 @@ export const About = () => {
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
                             <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
-                                <Sparkles className="w-8 h-8 text-purple-700 mb-4 group-hover:scale-110 transition" />
+                                <Sparkles className="w-8 h-8 text-[#61245D] mb-4 group-hover:scale-110 transition" />
                                 <p className="text-black font-semibold text-center">
                                     Finding root-cause of your<br />Problem
                                 </p>
                             </div>
 
                             <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
-                                <RefreshCcw className="w-8 h-8 text-purple-700 mb-4 group-hover:scale-110 transition" />
+                                <RefreshCcw className="w-8 h-8 text-[#61245D] mb-4 group-hover:scale-110 transition" />
                                 <p className="text-black font-semibold text-center">
                                     Releasing<br />Karmic Blockages
                                 </p>
                             </div>
 
                             <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
-                                <Dna className="w-8 h-8 text-purple-700 mb-4 group-hover:scale-110 transition" />
+                                <Dna className="w-8 h-8 text-[#61245D] mb-4 group-hover:scale-110 transition" />
                                 <p className="text-black font-semibold text-center">
                                     Activating your<br />DNA
                                 </p>
                             </div>
 
                             <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
-                                <PawPrint className="w-8 h-8 text-purple-700 mb-4 group-hover:scale-110 transition" />
+                                <PawPrint className="w-8 h-8 text-[#61245D] mb-4 group-hover:scale-110 transition" />
                                 <p className="text-black font-semibold text-center">
                                     Animal<br />Communication
                                 </p>
                             </div>
 
                             <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
-                                <History className="w-8 h-8 text-purple-700 mb-4 group-hover:scale-110 transition" />
+                                <History className="w-8 h-8 text-[#61245D] mb-4 group-hover:scale-110 transition" />
                                 <p className="text-black font-semibold text-center">
                                     Past life<br />Regression
                                 </p>
                             </div>
 
                             <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
-                                <Shield className="w-8 h-8 text-purple-700 mb-4 group-hover:scale-110 transition" />
+                                <Shield className="w-8 h-8 text-[#61245D] mb-4 group-hover:scale-110 transition" />
                                 <p className="text-black font-semibold text-center">
                                     Black magic<br />Removal
                                 </p>
@@ -135,7 +135,7 @@ export const About = () => {
                     </div>
 
                     <NavLink to="/aboutOurInstructors">
-                        <span className="inline-block bg-[#7C5190] text-white py-2.5 px-6 rounded-full font-medium text-[15px] hover:bg-[#a759c9f5] transition">
+                        <span className="inline-block bg-[#61245D] text-white py-2.5 px-6 rounded-full font-medium text-[15px] hover:bg-[#82327c] transition">
                             More About Us
                         </span>
                     </NavLink>

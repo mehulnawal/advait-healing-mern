@@ -8,6 +8,7 @@ import { About } from "./components/AboutUs"
 import { Courses } from "./components/Courses"
 import BookMySession from "./components/BookMySession"
 import AboutInstructors from "./components/teachers"
+import { TestimonialsSeparatePage } from "./components/testimonialsPage"
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             {/* <Route index element={<ChatBot />} /> */}
             {/* <Route path='/how-do-we-work' element={<HowIWork />} /> */}
             <Route path='/services' element={<Services />} />
+            <Route path='/testimonials' element={<TestimonialsSeparatePage />} />
           </Route>
         </Routes>
       </BrowserRouter>

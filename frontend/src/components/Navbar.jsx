@@ -41,7 +41,7 @@ export const Navbar = () => {
                                 to="/"
                                 className={({ isActive }) =>
                                     `relative pb-1 transition-all
-                                    ${isActive ? "text-[#7C5190] after:w-full after:bg-[#7C5190]" :
+                                    ${isActive ? "text-[#61245D] after:w-full after:bg-[#61245D]" :
                                         "text-black after:w-0 after:bg-transparent"}
                                     after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
                                 }>
@@ -54,7 +54,7 @@ export const Navbar = () => {
                                 to="/services"
                                 className={({ isActive }) =>
                                     `relative pb-1 transition-all
-                                    ${isActive ? "text-[#7C5190] after:w-full after:bg-[#7C5190]" :
+                                    ${isActive ? "text-[#61245D] after:w-full after:bg-[#61245D]" :
                                         "text-black after:w-0 after:bg-transparent"}
                                     after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
                                 }>
@@ -62,36 +62,47 @@ export const Navbar = () => {
                             </NavLink>
                         </li>
 
-                        <li>
-                            <NavLink
-                                to="/aboutOurInstructors"
-                                className={({ isActive }) =>
-                                    `relative pb-1 transition-all 
-                                    ${isActive ? "text-[#7C5190] after:w-full after:bg-[#7C5190]" :
-                                        "text-black after:w-0 after:bg-transparent"}
-                                    after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`}
-                            >
-                                About Us
-                            </NavLink>
-                        </li>
+                        <NavLink
+                            to="/aboutOurInstructors"
+                            className={({ isActive }) =>
+                                `relative pb-1 transition-all whitespace-nowrap min-w-[90px] text-center
+    ${isActive ? "text-[#61245D] after:w-full after:bg-[#61245D]" :
+                                    "text-black after:w-0 after:bg-transparent"}
+    after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`}
+                        >
+                            About Us
+                        </NavLink>
 
                         <li>
                             <NavLink
                                 to="/courses"
                                 className={({ isActive }) =>
                                     `relative pb-1 transition-all 
-                                    ${isActive ? "text-[#7C5190] after:w-full after:bg-[#7C5190]" :
+                                    ${isActive ? "text-[#61245D] after:w-full after:bg-[#61245D]" :
                                         "text-black after:w-0 after:bg-transparent"}
                                     after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`}
                             >
                                 Courses
                             </NavLink>
                         </li>
+
+                        <li>
+                            <NavLink
+                                to="/testimonials"
+                                className={({ isActive }) =>
+                                    `relative pb-1 transition-all 
+                                    ${isActive ? "text-[#61245D] after:w-full after:bg-[#61245D]" :
+                                        "text-black after:w-0 after:bg-transparent"}
+                                    after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`}
+                            >
+                                Testimonials
+                            </NavLink>
+                        </li>
                     </ul>
 
                     {/* Desktop Button */}
                     <NavLink to='bookMySession'>
-                        <button className="hidden md:flex justify-end items-center gap-2 bg-[#7C5190] w-fit text-white ms-auto py-2 px-2 rounded-2xl text-[14px] hover:bg-[#a759c9f5]">
+                        <button className="hidden md:flex justify-end items-center gap-2 bg-[#61245D] w-fit text-white ms-auto py-2 px-2 rounded-2xl text-[14px] hover:bg-[#82327c]">
                             <CalendarHeart size={"18px"} />
                             <span>Book Your Session</span>
                         </button>
@@ -121,14 +132,14 @@ export const Navbar = () => {
                 </div>
 
                 {/* Menu Items */}
-                <ul className="flex flex-col  !space-y-10 p-6  text-[18px] text-black">
+                <ul className="flex flex-col !space-y-10 p-6  text-[18px] text-black">
 
                     <li>
                         <NavLink
                             to="/"
                             className={({ isActive }) =>
                                 `relative pb-1 transition-all
-                                    ${isActive ? "text-[#7C5190] after:w-full after:bg-[#7C5190]" :
+                                    ${isActive ? "text-[#61245D] after:w-full after:bg-[#61245D]" :
                                     "text-black after:w-0 after:bg-transparent"}
                                     after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
                             }>
@@ -142,7 +153,7 @@ export const Navbar = () => {
                             onClick={() => setOpen(false)}
                             className={({ isActive }) =>
                                 `relative pb-1 
-                                ${isActive ? "after:w-full after:bg-[#7C5190]" :
+                                ${isActive ? "after:w-full after:bg-[#61245D]" :
                                     "after:w-0 after:bg-transparent"}
                                 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
                             }
@@ -157,7 +168,7 @@ export const Navbar = () => {
                             to="/aboutOurInstructors"
                             className={({ isActive }) =>
                                 `relative pb-1 
-                                ${isActive ? "after:w-full after:bg-[#7C5190]" :
+                                ${isActive ? "after:w-full after:bg-[#61245D]" :
                                     "after:w-0 after:bg-transparent"}
                                 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
                             }
@@ -171,7 +182,7 @@ export const Navbar = () => {
                             to="/courses"
                             className={({ isActive }) =>
                                 `relative pb-1 
-                                ${isActive ? "after:w-full after:bg-[#7C5190]" :
+                                ${isActive ? "after:w-full after:bg-[#61245D]" :
                                     "after:w-0 after:bg-transparent"}
                                 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
                             }
@@ -183,12 +194,26 @@ export const Navbar = () => {
                     <li>
                         <NavLink to='bookMySession'>
                             <button
-                                className="flex items-center gap-2 bg-[#7C5190] text-white w-fit py-2 px-3 rounded-2xl"
+                                className="flex items-center gap-2 bg-[#61245D] text-white w-fit py-2 px-3 rounded-2xl"
                                 onClick={() => setOpen(false)}
                             >
                                 <CalendarHeart size={18} />
                                 <span>Book Your Session</span>
                             </button>
+                        </NavLink>
+                    </li>
+
+                    <li>
+                        <NavLink
+                            to="/testimonials"
+                            className={({ isActive }) =>
+                                `relative pb-1 
+                                ${isActive ? "after:w-full after:bg-[#61245D]" :
+                                    "after:w-0 after:bg-transparent"}
+                                after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
+                            }
+                        >
+                            Testimonials
                         </NavLink>
                     </li>
                 </ul>

@@ -50,14 +50,14 @@ const ServiceCard = ({ image, title, short, Icon, onKnowMore }) => {
 
                 {/* Hover Info */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center px-6
-                    bg-[#7C5190]/88 text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    bg-[#61245D]/88 text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
                     <p className="text-gray-200 text-sm leading-relaxed italic">{short}</p>
                 </div>
             </div>
 
             {/* Title */}
             <h3
-                className="text-center mt-6 text-xl font-semibold text-[#7C5190]"
+                className="text-center mt-6 text-xl font-semibold text-[#61245D]"
                 style={{ fontFamily: "Cormorant Garamond, serif" }}
             >
                 {title}
@@ -66,7 +66,7 @@ const ServiceCard = ({ image, title, short, Icon, onKnowMore }) => {
             {/* Button */}
             <button
                 onClick={onKnowMore}
-                className="flex items-center gap-2 bg-[#7C5190] text-white mt-5 py-2.5 px-4 rounded-2xl font-medium hover:bg-[#a759c9] transition text-[14px]"
+                className="flex items-center gap-2 bg-[#61245D] text-white mt-5 py-2.5 px-4 rounded-2xl font-medium hover:bg-[#a759c9] transition text-[14px]"
             >
                 <Info size={16} />
                 <span>Know More</span>
@@ -384,7 +384,7 @@ export default function ServicesPage() {
                                 className="px-4 py-3 rounded-xl border border-gray-200 bg-white w-full md:w-96 focus:outline-none"
                             />
                             <button
-                                className="px-4 py-3 rounded-xl bg-[#7C5190] text-white"
+                                className="px-4 py-3 rounded-xl bg-[#61245D] text-white"
                                 onClick={() => setQuery("")}
                             >
                                 Clear

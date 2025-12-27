@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function BookMySession() {
     const [formData, setFormData] = useState({
@@ -9,6 +9,10 @@ export default function BookMySession() {
         subject: "",
         message: "",
     });
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     const [sending, setSending] = useState(false);
     const [successMsg, setSuccessMsg] = useState("");

@@ -10,7 +10,7 @@ import t5 from "../assets/testimonials/test5.jpg";
 import t6 from "../assets/testimonials/test6-monaMam.png";
 import t7 from "../assets/testimonials/test7-monaMam.png";
 
-const Testimonials = () => {
+export const TestimonialsSeparatePage = () => {
     const testimonials = [
         { img: t1, title: "Stress & Anxiety" },
         { img: t2, title: "Career Growth" },
@@ -65,4 +65,3 @@ const Testimonials = () => {
     );
 };
 
-export default Testimonials;

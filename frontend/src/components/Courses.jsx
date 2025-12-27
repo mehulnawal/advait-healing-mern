@@ -102,16 +102,16 @@ export function Courses() {
                                     {ins.courses.map((course, i) => (
                                         <div
                                             key={i}
-                                            className="p-5 bg-[#F9F4FF] rounded-xl border border-purple-100 shadow-sm"
+                                            className="p-5 bg-[#61245D] rounded-xl border border-purple-100 shadow-sm"
                                         >
                                             {/* Course Name */}
-                                            <h4 className="text-xl font-semibold text-black">
+                                            <h4 className="text-xl font-semibold text-white">
                                                 {course.name}
                                             </h4>
 
                                             {/* Duration */}
                                             {course.duration && (
-                                                <p className="text-gray-700 mt-1">
+                                                <p className="text-gray-200 mt-1">
                                                     <strong>Duration:</strong> {course.duration}
                                                 </p>
                                             )}
@@ -119,7 +119,7 @@ export function Courses() {
                                             {/* Duration Options */}
                                             {course.durationOptions && (
                                                 <div className="mt-2">
-                                                    <strong className="text-gray-700">Duration Options:</strong>
+                                                    <strong className="text-gray-200">Duration Options:</strong>
                                                     <div className="flex flex-wrap gap-2 mt-1">
                                                         {course.durationOptions.map((d, j) => (
                                                             <span
@@ -147,10 +147,10 @@ export function Courses() {
                     </p>
 
                     <p className="mt-2 text-gray-600 text-base md:text-lg">
-                        We also offer professional courses in <span className="text-purple-700 font-semibold">Reiki</span> and other transformative healing practices.
+                        We also offer professional courses in <span className="text-[#61245D] font-semibold">Reiki</span> and other transformative healing practices.
                     </p>
 
-                    <div className="w-24 h-1 bg-purple-300 mx-auto mt-6 rounded-full"></div>
+                    <div className="w-24 h-1 bg-[#61245D] mx-auto mt-6 rounded-full"></div>
                 </div>
 
 

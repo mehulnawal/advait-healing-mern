@@ -69,7 +69,7 @@ export const About = () => {
                     </div>
 
                     <NavLink>
-                        <span className="bg-[#7C5190] text-white py-2.5 px-6 rounded-full font-medium text-[15px] hover:bg-[#a759c9f5] transition">
+                        <span className="bg-[#61245D] text-white py-2.5 px-6 rounded-full font-medium text-[15px] hover:bg-[#a759c9f5] transition">
                             More About Us
                         </span>
                     </NavLink>

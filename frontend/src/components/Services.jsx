@@ -94,7 +94,7 @@ const ServiceCard = ({ image, title, desc, Icon, onKnowMore }) => {
             {/* Button */}
             <button
                 onClick={onKnowMore}
-                className="flex items-center gap-2 bg-[#7C5190] text-white mt-4 py-2 px-4 rounded-2xl font-medium hover:bg-[#a759c9f5] transition text-[14px]"
+                className="flex items-center gap-2 bg-[#61245D] text-white mt-4 py-2 px-4 rounded-2xl font-medium hover:bg-[#a759c9f5] transition text-[14px]"
             >
                 <Info size={16} />
                 <span>Know More</span>
@@ -200,7 +200,7 @@ const ServiceModal = ({ open, onClose, service }) => {
                             {/* CTA */}
                             <NavLink to='/bookMySession'>
                                 <button
-                                    className="bg-[#7C5190] text-white px-6 py-3 rounded-full font-medium hover:bg-[#a759c9f5] transition"
+                                    className="bg-[#61245D] text-white px-6 py-3 rounded-full font-medium hover:bg-[#a759c9f5] transition"
                                     onClick={onClose}
                                 >
                                     Book This Session
@@ -520,7 +520,7 @@ export const Services = () => {
                 {/* CTA */}
                 {/* <div className="flex justify-center mt-10">
                     <NavLink>
-                        <button className="flex items-center gap-2 bg-[#7C5190] text-white mt-6 py-2.5 px-4 rounded-2xl font-medium hover:bg-[#a759c9f5] transition">
+                        <button className="flex items-center gap-2 bg-[#61245D] text-white mt-6 py-2.5 px-4 rounded-2xl font-medium hover:bg-[#a759c9f5] transition">
                             <span>More Services</span>
                         </button>
                     </NavLink>

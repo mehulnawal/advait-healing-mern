@@ -62,12 +62,12 @@ export default function ChatBot({ botOpen, setBotOpen, closeNavbar }) {
                 <div className="fixed left-6 md:left-10 bottom-8 z-[60]">
                     <button
                         onClick={() => setBotOpen(true)}
-                        className="group flex items-center justify-center w-14 h-14 rounded-full bg-[#7C5190] text-white shadow-2xl hover:scale-105 transition"
+                        className="group flex items-center justify-center w-14 h-14 rounded-full bg-[#61245D] text-white shadow-2xl hover:scale-105 transition"
                     >
                         <IconChat />
                     </button>
 
-                    <div className="absolute left-16 bottom-2 bg-[#7C5190] text-white px-3 py-1 rounded-full text-xs shadow-lg">
+                    <div className="absolute left-16 bottom-2 bg-[#61245D] text-white px-3 py-1 rounded-full text-xs shadow-lg">
                         FAQs
                     </div>
                 </div>

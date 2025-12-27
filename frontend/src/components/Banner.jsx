@@ -13,7 +13,7 @@ export const Banner = () => {
 
                 {/* LEFT CONTENT */}
                 <div>
-                    <h1 className="text-5xl md:text-6xl font-[Cormorant_Garamond] font-extrabold text-purple-900 leading-tight">
+                    <h1 className="text-5xl md:text-6xl font-[Cormorant_Garamond] font-extrabold text-[black] leading-tight">
                         Heal. Release. Transform.
                     </h1>
 
