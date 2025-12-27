@@ -9,7 +9,6 @@ export const Navbar = () => {
     const [open, setOpen] = useState(false);
     const [botOpen, setBotOpen] = useState(false);
 
-    // When Navbar opens → close ChatBot
     const handleNavbarOpen = () => {
         setBotOpen(false);
         setOpen(true);
@@ -26,25 +25,26 @@ export const Navbar = () => {
         <>
             {/* NAVBAR */}
             <div className="h-30 px-2 md:px-[50px] lg:px-[70px] text-black text-[17px]">
-                <nav className="flex items-center justify-between md:grid md:grid-cols-3 h-full">
+                <nav className="flex items-center justify-between min-[1001px]:grid min-[1001px]:grid-cols-3 h-full">
 
                     {/* Logo */}
-                    <NavLink to='/' className="w-fit h-fit mb-10">
+                    <NavLink to="/" className="w-fit h-fit mb-10">
                         <img className="w-[180px]" src={logo} alt="Logo" />
                     </NavLink>
 
-                    <ul className="hidden md:flex justify-between gap-5">
-                        <li></li>
-
+                    {/* DESKTOP NAV LINKS (ONLY >1000px) */}
+                    <ul className="hidden min-[1001px]:flex justify-center gap-6">
                         <li>
                             <NavLink
                                 to="/"
                                 className={({ isActive }) =>
-                                    `relative pb-1 transition-all
-                                    ${isActive ? "text-[#61245D] after:w-full after:bg-[#61245D]" :
-                                        "text-black after:w-0 after:bg-transparent"}
+                                    `relative pb-1 whitespace-nowrap min-w-[80px] text-center transition-all
+                                    ${isActive
+                                        ? "text-[#61245D] after:w-full after:bg-[#61245D]"
+                                        : "text-black after:w-0 after:bg-transparent"}
                                     after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
-                                }>
+                                }
+                            >
                                 Home
                             </NavLink>
                         </li>
@@ -53,34 +53,42 @@ export const Navbar = () => {
                             <NavLink
                                 to="/services"
                                 className={({ isActive }) =>
-                                    `relative pb-1 transition-all
-                                    ${isActive ? "text-[#61245D] after:w-full after:bg-[#61245D]" :
-                                        "text-black after:w-0 after:bg-transparent"}
+                                    `relative pb-1 whitespace-nowrap min-w-[90px] text-center transition-all
+                                    ${isActive
+                                        ? "text-[#61245D] after:w-full after:bg-[#61245D]"
+                                        : "text-black after:w-0 after:bg-transparent"}
                                     after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
-                                }>
+                                }
+                            >
                                 Services
                             </NavLink>
                         </li>
 
-                        <NavLink
-                            to="/aboutOurInstructors"
-                            className={({ isActive }) =>
-                                `relative pb-1 transition-all whitespace-nowrap min-w-[90px] text-center
-    ${isActive ? "text-[#61245D] after:w-full after:bg-[#61245D]" :
-                                    "text-black after:w-0 after:bg-transparent"}
-    after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`}
-                        >
-                            About Us
-                        </NavLink>
+                        <li>
+                            <NavLink
+                                to="/aboutOurInstructors"
+                                className={({ isActive }) =>
+                                    `relative pb-1 whitespace-nowrap min-w-[100px] text-center transition-all
+                                    ${isActive
+                                        ? "text-[#61245D] after:w-full after:bg-[#61245D]"
+                                        : "text-black after:w-0 after:bg-transparent"}
+                                    after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
+                                }
+                            >
+                                About Us
+                            </NavLink>
+                        </li>
 
                         <li>
                             <NavLink
                                 to="/courses"
                                 className={({ isActive }) =>
-                                    `relative pb-1 transition-all 
-                                    ${isActive ? "text-[#61245D] after:w-full after:bg-[#61245D]" :
-                                        "text-black after:w-0 after:bg-transparent"}
-                                    after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`}
+                                    `relative pb-1 whitespace-nowrap min-w-[90px] text-center transition-all
+                                    ${isActive
+                                        ? "text-[#61245D] after:w-full after:bg-[#61245D]"
+                                        : "text-black after:w-0 after:bg-transparent"}
+                                    after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
+                                }
                             >
                                 Courses
                             </NavLink>
@@ -90,28 +98,30 @@ export const Navbar = () => {
                             <NavLink
                                 to="/testimonials"
                                 className={({ isActive }) =>
-                                    `relative pb-1 transition-all 
-                                    ${isActive ? "text-[#61245D] after:w-full after:bg-[#61245D]" :
-                                        "text-black after:w-0 after:bg-transparent"}
-                                    after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`}
+                                    `relative pb-1 whitespace-nowrap min-w-[110px] text-center transition-all
+                                    ${isActive
+                                        ? "text-[#61245D] after:w-full after:bg-[#61245D]"
+                                        : "text-black after:w-0 after:bg-transparent"}
+                                    after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
+                                }
                             >
                                 Testimonials
                             </NavLink>
                         </li>
                     </ul>
 
-                    {/* Desktop Button */}
-                    <NavLink to='bookMySession'>
-                        <button className="hidden md:flex justify-end items-center gap-2 bg-[#61245D] w-fit text-white ms-auto py-2 px-2 rounded-2xl text-[14px] hover:bg-[#82327c]">
-                            <CalendarHeart size={"18px"} />
+                    {/* DESKTOP BUTTON (ONLY >1000px) */}
+                    <NavLink to="/bookMySession">
+                        <button className="hidden min-[1001px]:flex items-center gap-2 bg-[#61245D] text-white ms-auto py-2 px-3 rounded-2xl text-[14px] hover:bg-[#82327c] transition">
+                            <CalendarHeart size={18} />
                             <span>Book Your Session</span>
                         </button>
                     </NavLink>
 
-                    {/* Mobile Menu Button */}
+                    {/* HAMBURGER (≤1000px) */}
                     <button
                         onClick={handleNavbarOpen}
-                        className="md:hidden ms-auto justify-self-end"
+                        className="min-[1001px]:hidden ms-auto"
                     >
                         <Menu size={30} />
                     </button>
@@ -124,96 +134,25 @@ export const Navbar = () => {
                 transform transition-transform duration-300 
                 ${open ? "translate-x-0" : "translate-x-full"}`}
             >
-                {/* Close */}
                 <div className="flex justify-end p-4">
                     <button onClick={() => setOpen(false)}>
-                        <X size={26} className="text-black" />
+                        <X size={26} />
                     </button>
                 </div>
 
-                {/* Menu Items */}
-                <ul className="flex flex-col !space-y-10 p-6  text-[18px] text-black">
+                <ul className="flex flex-col space-y-10 p-6 text-[18px]">
+                    <li><NavLink to="/" onClick={() => setOpen(false)}>Home</NavLink></li>
+                    <li><NavLink to="/services" onClick={() => setOpen(false)}>Services</NavLink></li>
+                    <li><NavLink to="/aboutOurInstructors" onClick={() => setOpen(false)}>About Us</NavLink></li>
+                    <li><NavLink to="/courses" onClick={() => setOpen(false)}>Courses</NavLink></li>
+                    <li><NavLink to="/testimonials" onClick={() => setOpen(false)}>Testimonials</NavLink></li>
 
                     <li>
-                        <NavLink
-                            to="/"
-                            className={({ isActive }) =>
-                                `relative pb-1 transition-all
-                                    ${isActive ? "text-[#61245D] after:w-full after:bg-[#61245D]" :
-                                    "text-black after:w-0 after:bg-transparent"}
-                                    after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
-                            }>
-                            Home
-                        </NavLink>
-                    </li>
-
-                    <li>
-                        <NavLink
-                            to="/services"
-                            onClick={() => setOpen(false)}
-                            className={({ isActive }) =>
-                                `relative pb-1 
-                                ${isActive ? "after:w-full after:bg-[#61245D]" :
-                                    "after:w-0 after:bg-transparent"}
-                                after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
-                            }
-                        >
-                            Services
-                        </NavLink>
-
-                    </li>
-
-                    <li>
-                        <NavLink
-                            to="/aboutOurInstructors"
-                            className={({ isActive }) =>
-                                `relative pb-1 
-                                ${isActive ? "after:w-full after:bg-[#61245D]" :
-                                    "after:w-0 after:bg-transparent"}
-                                after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
-                            }
-                        >
-                            About Us
-                        </NavLink>
-                    </li>
-
-                    <li>
-                        <NavLink
-                            to="/courses"
-                            className={({ isActive }) =>
-                                `relative pb-1 
-                                ${isActive ? "after:w-full after:bg-[#61245D]" :
-                                    "after:w-0 after:bg-transparent"}
-                                after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
-                            }
-                        >
-                            Courses
-                        </NavLink>
-                    </li>
-
-                    <li>
-                        <NavLink to='bookMySession'>
-                            <button
-                                className="flex items-center gap-2 bg-[#61245D] text-white w-fit py-2 px-3 rounded-2xl"
-                                onClick={() => setOpen(false)}
-                            >
+                        <NavLink to="/bookMySession" onClick={() => setOpen(false)}>
+                            <button className="flex items-center gap-2 bg-[#61245D] text-white py-2 px-3 rounded-2xl">
                                 <CalendarHeart size={18} />
                                 <span>Book Your Session</span>
                             </button>
-                        </NavLink>
-                    </li>
-
-                    <li>
-                        <NavLink
-                            to="/testimonials"
-                            className={({ isActive }) =>
-                                `relative pb-1 
-                                ${isActive ? "after:w-full after:bg-[#61245D]" :
-                                    "after:w-0 after:bg-transparent"}
-                                after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all`
-                            }
-                        >
-                            Testimonials
                         </NavLink>
                     </li>
                 </ul>
@@ -221,9 +160,7 @@ export const Navbar = () => {
 
             <Outlet />
 
-            {/* PASS STATE TO CHATBOT */}
             <ChatBot botOpen={botOpen} setBotOpen={setBotOpen} closeNavbar={() => setOpen(false)} />
-
             <Footer />
         </>
     );
