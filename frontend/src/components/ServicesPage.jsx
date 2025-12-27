@@ -28,16 +28,18 @@ const HERO_IMAGE = "/mnt/data/founder.png";
 // ------------------- SERVICE CARD -------------------
 const ServiceCard = ({ image, title, short, Icon, onKnowMore }) => {
     return (
-        <div className="w-full flex flex-col items-center">
+        <div className="w-full flex flex-col items-center relative text-center">
             {/* Icon */}
-            <div className="flex justify-center -mb-10 z-10 relative">
+            <div className="absolute -top-10 left-1/2 -translate-x-1/2 z-10">
                 <div className="w-20 h-20 rounded-full bg-[#FFFFFF] border-b-4 border-gray-200 shadow-md flex items-center justify-center">
                     <Icon className="w-10 h-10 text-[#050505] stroke-[1.5px]" />
                 </div>
+
+                <div className="w-px h-6 bg-gray-300"></div>
             </div>
 
             {/* Card */}
-            <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden border border-[#efe6d2] w-full cursor-pointer">
+            <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden border border-[#efe6d2] w-full pt-12 cursor-pointer">
                 <div className="w-full h-48 bg-gray-100">
                     {image ? (
                         <img src={image} alt={title} className="w-full h-full object-cover" />
@@ -64,13 +66,15 @@ const ServiceCard = ({ image, title, short, Icon, onKnowMore }) => {
             </h3>
 
             {/* Button */}
-            <button
-                onClick={onKnowMore}
-                className="flex items-center gap-2 bg-[#61245D] text-white mt-5 py-2.5 px-4 rounded-2xl font-medium hover:bg-[#a759c9] transition text-[14px]"
-            >
-                <Info size={16} />
-                <span>Know More</span>
-            </button>
+            <div className="flex justify-center">
+                <button
+                    onClick={onKnowMore}
+                    className="flex items-center gap-2 bg-[#61245D] text-white mt-5 py-2.5 px-4 rounded-2xl font-medium hover:bg-[#a759c9] transition text-[14px]"
+                >
+                    <Info size={16} />
+                    <span>Know More</span>
+                </button>
+            </div>
         </div>
     );
 };
