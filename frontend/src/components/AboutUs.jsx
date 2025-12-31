@@ -89,49 +89,98 @@ export const About = () => {
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                            <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
-                                <Sparkles className="w-8 h-8 text-[#61245D] mb-4 group-hover:scale-110 transition" />
+                            {/* 1. Finding root-cause */}
+                            <div className="group bg-white rounded-2xl p-6 shadow-md transition relative overflow-hidden">
+                                <Sparkles className="w-8 h-8 text-[#61245D] mb-4 mx-auto transition-transform group-hover:scale-110" />
                                 <p className="text-black font-semibold text-center">
                                     Finding root-cause of your<br />Problem
                                 </p>
+
+                                <div className="absolute inset-0 bg-white/95 flex items-center justify-center px-4
+            opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <p className="text-sm text-gray-700 text-center leading-relaxed">
+                                        Identify the underlying emotional, karmic, or energetic causes behind recurring issues.
+                                    </p>
+                                </div>
                             </div>
 
-                            <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
-                                <RefreshCcw className="w-8 h-8 text-[#61245D] mb-4 group-hover:scale-110 transition" />
+                            {/* 2. Releasing Karmic Blockages */}
+                            <div className="group bg-white rounded-2xl p-6 shadow-md transition relative overflow-hidden">
+                                <RefreshCcw className="w-8 h-8 text-[#61245D] mb-4 mx-auto transition-transform group-hover:scale-110" />
                                 <p className="text-black font-semibold text-center">
                                     Releasing<br />Karmic Blockages
                                 </p>
+
+                                <div className="absolute inset-0 bg-white/95 flex items-center justify-center px-4
+            opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <p className="text-sm text-gray-700 text-center leading-relaxed">
+                                        Clear deep-rooted karmic patterns that may be affecting emotional balance and life flow.
+                                    </p>
+                                </div>
                             </div>
 
-                            <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
-                                <Dna className="w-8 h-8 text-[#61245D] mb-4 group-hover:scale-110 transition" />
+                            {/* 3. Activating DNA */}
+                            <div className="group bg-white rounded-2xl p-6 shadow-md transition relative overflow-hidden">
+                                <Dna className="w-8 h-8 text-[#61245D] mb-4 mx-auto transition-transform group-hover:scale-110" />
                                 <p className="text-black font-semibold text-center">
                                     Activating your<br />DNA
                                 </p>
+
+                                <div className="absolute inset-0 bg-white/95 flex items-center justify-center px-4
+            opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <p className="text-sm text-gray-700 text-center leading-relaxed">
+                                        Support energetic awakening and deeper alignment with your inner potential and awareness.
+                                    </p>
+                                </div>
                             </div>
 
-                            <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
-                                <PawPrint className="w-8 h-8 text-[#61245D] mb-4 group-hover:scale-110 transition" />
+                            {/* 4. Animal Communication */}
+                            <div className="group bg-white rounded-2xl p-6 shadow-md transition relative overflow-hidden">
+                                <PawPrint className="w-8 h-8 text-[#61245D] mb-4 mx-auto transition-transform group-hover:scale-110" />
                                 <p className="text-black font-semibold text-center">
                                     Animal<br />Communication
                                 </p>
+
+                                <div className="absolute inset-0 bg-white/95 flex items-center justify-center px-4
+            opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <p className="text-sm text-gray-700 text-center leading-relaxed">
+                                        Understand emotional, behavioral, and energetic messages shared by animals.
+                                    </p>
+                                </div>
                             </div>
 
-                            <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
-                                <History className="w-8 h-8 text-[#61245D] mb-4 group-hover:scale-110 transition" />
+                            {/* 5. Past Life Regression */}
+                            <div className="group bg-white rounded-2xl p-6 shadow-md transition relative overflow-hidden">
+                                <History className="w-8 h-8 text-[#61245D] mb-4 mx-auto transition-transform group-hover:scale-110" />
                                 <p className="text-black font-semibold text-center">
                                     Past life<br />Regression
                                 </p>
+
+                                <div className="absolute inset-0 bg-white/95 flex items-center justify-center px-4
+            opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <p className="text-sm text-gray-700 text-center leading-relaxed">
+                                        Explore unresolved patterns and experiences from past lives influencing the present.
+                                    </p>
+                                </div>
                             </div>
 
-                            <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition">
-                                <Shield className="w-8 h-8 text-[#61245D] mb-4 group-hover:scale-110 transition" />
+                            {/* 6. Black Magic Removal */}
+                            <div className="group bg-white rounded-2xl p-6 shadow-md transition relative overflow-hidden">
+                                <Shield className="w-8 h-8 text-[#61245D] mb-4 mx-auto transition-transform group-hover:scale-110" />
                                 <p className="text-black font-semibold text-center">
                                     Black magic<br />Removal
                                 </p>
+
+                                <div className="absolute inset-0 bg-white/95 flex items-center justify-center px-4
+            opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <p className="text-sm text-gray-700 text-center leading-relaxed">
+                                        Clear external negative energies and restore energetic protection and stability.
+                                    </p>
+                                </div>
                             </div>
 
                         </div>
+
                     </div>
 
                     <NavLink to="/aboutOurInstructors">

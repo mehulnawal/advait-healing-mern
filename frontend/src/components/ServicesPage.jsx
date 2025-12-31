@@ -214,7 +214,6 @@ export default function ServicesPage() {
         return () => (document.body.style.overflow = "auto");
     }, [modalOpen]);
 
-    // --- Full list of services (expanded) ---
     const services = [
         {
             title: "Aura Clearing & Chakra Balancing",

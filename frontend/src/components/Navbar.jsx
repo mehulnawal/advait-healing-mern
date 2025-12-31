@@ -24,11 +24,11 @@ export const Navbar = () => {
     return (
         <>
             {/* NAVBAR */}
-            <div className="h-30 px-2 md:px-[50px] lg:px-[70px] text-black text-[17px]">
+            <div className="sticky top-0 z-[1000] bg-white px-2 md:px-[50px] lg:px-[70px] text-black text-[17px] shadow-sm">
                 <nav className="flex items-center justify-between min-[1001px]:grid min-[1001px]:grid-cols-3 h-full">
 
                     {/* Logo */}
-                    <NavLink to="/" className="w-fit h-fit mb-10">
+                    <NavLink to="/" className="w-fit h-fit">
                         <img className="w-[180px]" src={logo} alt="Logo" />
                     </NavLink>
 

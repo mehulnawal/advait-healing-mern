@@ -22,7 +22,7 @@ const instructors = [
         name: "Sunny Mann",
         title: "Animal Communicator & Energy Coach",
         image: sunny,
-        bio: "Sunny Mann is an intuitive animal and human energy healer with 25+ years of experience. Known as “The Animal Whisperer,” he helps people understand their pets, resolve behavioural issues, and trains students globally in animal communication and spiritual healing.",
+        bio: "Sunny Mann is an intuitive animal and human energy healer with 25+ years of experience. Known as “The Animal Whisperer,” she helps people understand their pets, resolve behavioural issues, and trains students globally in animal communication and spiritual healing.",
         tags: ["Animal Communication", "Energy Healing", "Spiritual Coaching"]
     }
 ];
@@ -43,10 +43,10 @@ export default function AboutInstructors() {
                 {/* Heading */}
                 <div className="text-center mb-16">
                     <h2 className="text-5xl font-extrabold text-black font-[Cormorant_Garamond]">
-                        About Our Instructors
+                        About Us
                     </h2>
                     <p className="text-gray-600 max-w-3xl mx-auto mt-3 text-lg">
-                        Meet our certified healers and instructors guiding individuals on a journey of emotional, spiritual, and energetic transformation.
+                        Meet our certified healers and instructors who are guiding individuals on a journey of emotional, spiritual, and energetic transformation.
                     </p>
                 </div>
 
@@ -59,11 +59,11 @@ export default function AboutInstructors() {
                         >
                             {/* Image */}
                             <div className="flex-shrink-0">
-                                <div className="w-44 h-44 rounded-full overflow-hidden shadow-md mx-auto md:mx-0">
+                                <div className="w-44 h-44 rounded-full overflow-hidden shadow-md mx-auto md:mx-0 bg-gray-50 flex items-center justify-center">
                                     <img
                                         src={ins.image}
                                         alt={ins.name}
-                                        className="object-cover w-full h-full"
+                                        className="object-contain w-full h-full"
                                     />
                                 </div>
                             </div>
@@ -71,22 +71,18 @@ export default function AboutInstructors() {
                             {/* Text Content */}
                             <div className="flex flex-col md:text-left text-center">
 
-                                {/* Name */}
                                 <h3 className="text-3xl font-bold text-black font-[Cormorant_Garamond]">
                                     {ins.name}
                                 </h3>
 
-                                {/* Title */}
                                 <p className="text-black text-sm mt-1 font-medium tracking-wide uppercase">
                                     {ins.title}
                                 </p>
 
-                                {/* Bio */}
                                 <p className="text-gray-600 mt-3 text-[15px] leading-relaxed md:max-w-[700px]">
                                     {ins.bio}
                                 </p>
 
-                                {/* Tags */}
                                 <div className="flex flex-wrap gap-2 mt-4 justify-center md:justify-start">
                                     {ins.tags.map((tag, i) => (
                                         <span
@@ -101,6 +97,7 @@ export default function AboutInstructors() {
                         </div>
                     ))}
                 </div>
+
             </div>
         </section>
     );
