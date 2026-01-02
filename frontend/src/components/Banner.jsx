@@ -28,13 +28,7 @@ export const Banner = () => {
                             Our Impact
                         </p>
 
-                        <div className="grid grid-cols-2 gap-4 max-w-md">
-                            <div className="bg-white shadow-sm rounded-xl p-5 text-center">
-                                <h3 className="text-2xl font-bold text-black">300+</h3>
-                                <p className="text-gray-600 text-sm mt-1">
-                                    Clients Reported Emotional Relief
-                                </p>
-                            </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl">
 
                             <div className="bg-white shadow-sm rounded-xl p-5 text-center">
                                 <h3 className="text-2xl font-bold text-black">600+</h3>
@@ -42,6 +36,21 @@ export const Banner = () => {
                                     Healing Sessions Conducted
                                 </p>
                             </div>
+
+                            <div className="bg-white shadow-sm rounded-xl p-5 text-center">
+                                <h3 className="text-2xl font-bold text-black">150+</h3>
+                                <p className="text-gray-600 text-sm mt-1">
+                                    People Healed
+                                </p>
+                            </div>
+
+                            <div className="bg-white shadow-sm rounded-xl p-5 text-center">
+                                <h3 className="text-2xl font-bold text-black">15+</h3>
+                                <p className="text-gray-600 text-sm mt-1">
+                                    Healing Modalities
+                                </p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
