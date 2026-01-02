@@ -24,7 +24,10 @@ export const Navbar = () => {
     return (
         <>
             {/* NAVBAR */}
-            <div className="sticky top-0 z-[1000] bg-white px-2 md:px-[50px] lg:px-[70px] text-black text-[17px] shadow-sm">
+            <div
+                id="main-navbar"
+                className="fixed top-0 left-0 w-full z-[1000] bg-white px-2 md:px-[50px] lg:px-[70px] text-black text-[17px] shadow-sm" >
+
                 <nav className="flex items-center justify-between min-[1001px]:grid min-[1001px]:grid-cols-3 h-full">
 
                     {/* Logo */}
@@ -158,7 +161,10 @@ export const Navbar = () => {
                 </ul>
             </div>
 
-            <Outlet />
+            <div className="pt-[96px]">
+                <Outlet />
+            </div>
+
 
             <ChatBot botOpen={botOpen} setBotOpen={setBotOpen} closeNavbar={() => setOpen(false)} />
             <Footer />

@@ -113,7 +113,7 @@ const ServiceModal = ({ open, onClose, service }) => {
 
     return (
         <div
-            className="fixed inset-0 z-50 flex items-center justify-center"
+            className="fixed inset-0 z-[999999] flex items-center justify-center"
             aria-modal="true"
             role="dialog"
             onMouseDown={(e) => {

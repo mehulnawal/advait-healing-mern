@@ -26,7 +26,7 @@ const HERO_IMAGE = "/mnt/data/founder.png";
 // ...etc
 
 // ------------------- SERVICE CARD -------------------
-const ServiceCard = ({ image, title, short, Icon, onKnowMore }) => {
+const ServiceCard = ({ image, title, short, onKnowMore }) => {
     return (
         <div className="w-full flex flex-col items-center relative text-center">
             {/* Icon */}
@@ -80,53 +80,126 @@ const ServiceCard = ({ image, title, short, Icon, onKnowMore }) => {
 };
 
 // ------------------- MODAL -------------------
-import { createPortal } from "react-dom";
-
-const NAVBAR_HEIGHT = 96;
-
-export const ServiceModal = ({ open, onClose, service }) => {
+const ServiceModal = ({ open, onClose, service }) => {
     if (!open || !service) return null;
 
-    return createPortal(
-        <div className="fixed inset-0 z-[99999]">
+    const { title, long, image, process, benefits, duration, price, whoFor } = service;
 
+    return (
+        <div
+            className="fixed inset-0 z-50 flex items-center justify-center px-4"
+            aria-modal="true"
+            role="dialog"
+            onMouseDown={(e) => {
+                if (e.target === e.currentTarget) onClose();
+            }}
+        >
             {/* Backdrop */}
-            <div
-                className="absolute inset-0 bg-black/40 backdrop-blur-sm"
-                onClick={onClose}
-            />
+            <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
 
-            {/* Modal Wrapper */}
-            <div
-                className="absolute left-0 right-0 mx-auto z-[100]"
-                style={{ top: NAVBAR_HEIGHT }}
-            >
-                <div className="relative max-w-5xl mx-auto px-4">
-                    <div className="bg-white rounded-2xl shadow-2xl max-h-[calc(100vh-120px)] overflow-y-auto p-8">
+            {/* Modal */}
+            <div className="relative w-full max-w-4xl mx-auto max-h-[90vh] overflow-y-auto">
+                <div className="relative bg-white rounded-2xl shadow-2xl p-8 pb-6">
+                    {/* Close */}
+                    <button
+                        onClick={onClose}
+                        className="absolute top-4 right-4 p-2 rounded-full hover:bg-gray-100"
+                    >
+                        <X size={22} className="text-gray-600" />
+                    </button>
 
-                        {/* Close */}
-                        <button
-                            onClick={onClose}
-                            className="absolute top-4 right-4 p-2 rounded-full hover:bg-gray-100"
-                        >
-                            <X size={22} />
-                        </button>
+                    {/* Content */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+                        <div>
+                            <div className="flex justify-center">
+                                <div className="w-56 h-56 rounded-full overflow-hidden shadow-inner bg-gray-100">
+                                    <img src={image || HERO_IMAGE} alt={title} className="object-cover w-full h-full" />
+                                </div>
+                            </div>
 
-                        {/* CONTENT */}
-                        <h2 className="text-3xl font-bold mb-4">
-                            {service.title}
-                        </h2>
+                            {benefits && (
+                                <div className="mt-6">
+                                    <h4 className="font-semibold text-gray-800 mb-2">Benefits</h4>
+                                    <ul className="list-disc list-inside text-gray-600 space-y-1">
+                                        {benefits.map((b, i) => (
+                                            <li key={i}>{b}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+                        </div>
 
-                        <p className="text-gray-700 mb-6">
-                            {service.long}
-                        </p>
+                        <div>
+                            <h3
+                                className="text-3xl font-bold text-gray-900 mb-3"
+                                style={{ fontFamily: "Cormorant Garamond, serif" }}
+                            >
+                                {title}
+                            </h3>
 
-                        {/* rest of your modal content */}
+                            <p className="text-gray-700 mb-4">{long}</p>
+
+                            {process && (
+                                <div className="mb-4">
+                                    <h4 className="font-semibold text-gray-800 mb-1">Process</h4>
+                                    <p className="text-gray-600">{process}</p>
+                                </div>
+                            )}
+
+                            {whoFor && (
+                                <div className="mb-4">
+                                    <h4 className="font-semibold text-gray-800 mb-1">Who this is for</h4>
+                                    <p className="text-gray-600">{whoFor}</p>
+                                </div>
+                            )}
+
+                            <div className="flex items-center gap-6 mt-4 mb-6 flex-wrap">
+                                {duration && (
+                                    <div className="flex items-center gap-2 text-gray-700">
+                                        <span className="text-lg">⏱️</span>
+                                        <div>
+                                            <div className="text-sm text-gray-500">Duration</div>
+                                            <div className="font-medium">{duration}</div>
+                                        </div>
+                                    </div>
+                                )}
+                                {price && (
+                                    <div className="flex items-center gap-2 text-gray-700">
+                                        <span className="text-lg">💠</span>
+                                        <div>
+                                            <div className="text-sm text-gray-500">Energy Exchange</div>
+                                            <div className="font-medium">{price}</div>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
+
+                            <div className="flex gap-3">
+                                <a href="/book" className="inline-block">
+                                    <button
+                                        onClick={onClose}
+                                        className="bg-[#050505] text-white px-6 py-3 rounded-full font-medium hover:opacity-95 transition"
+                                    >
+                                        Book This Session
+                                    </button>
+                                </a>
+
+                                <button
+                                    onClick={onClose}
+                                    className="px-6 py-3 rounded-full border border-gray-200 hover:bg-gray-50 transition"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="text-center text-sm text-gray-400 mt-6">
+                        <em>All sessions offered are energy-based and transformational.</em>
                     </div>
                 </div>
             </div>
-        </div>,
-        document.body
+        </div>
     );
 };
 
